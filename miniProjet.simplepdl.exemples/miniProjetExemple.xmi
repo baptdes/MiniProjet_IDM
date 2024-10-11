@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    name="pdl-sujet-ressources">
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processelement.4"
+      linksToSuccessors="//@processelement.5"
+      name="conception">
+    <need ressource="//@processelement.9"
+        quantityNeeded="500"
+        used="true"/>
+  </processelement>
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processelement.4 //@processelement.6"
+      name="fabrication">
+    <need ressource="//@processelement.8"
+        quantityNeeded="3"
+        used="true"/>
+    <need ressource="//@processelement.9"
+        quantityNeeded="5000"
+        used="true"/>
+  </processelement>
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processelement.6 //@processelement.7"
+      name="vente"/>
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processelement.5"
+      linksToSuccessors="//@processelement.7"
+      name="marketing">
+    <need ressource="//@processelement.8"
+        quantityNeeded="1"
+        used="true"/>
+    <need ressource="//@processelement.9"
+        quantityNeeded="10000"
+        used="true"/>
+  </processelement>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      linkType="startToFinish"
+      predecessor="//@processelement.1"
+      successor="//@processelement.0"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processelement.0"
+      successor="//@processelement.3"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.1"
+      successor="//@processelement.2"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.3"
+      successor="//@processelement.2"/>
+  <processelement
+      xsi:type="simplepdl:Ressource"
+      quantity="10"
+      name="salles"/>
+  <processelement
+      xsi:type="simplepdl:Ressource"
+      quantity="10000"
+      name="budget"/>
+</simplepdl:Process>

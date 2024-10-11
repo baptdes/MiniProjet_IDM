@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:simplepdl="http://simplepdl" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_JFNhgIWKEe-p288Loc1C2g" selectedViews="_fF_4IIWKEe-p288Loc1C2g" version="15.2.0.202303281325">
+    <semanticResources>My.miniProjet.simplepdl</semanticResources>
+    <semanticResources>miniProjetExemple.xmi</semanticResources>
+    <semanticResources>pdl-sujet.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_fF_4IIWKEe-p288Loc1C2g">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_G8WawIWOEe-xcIKrKNrJsw" name="new ProcessDiagram" repPath="#_G8VMoIWOEe-xcIKrKNrJsw" changeId="1728626728413">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']"/>
+        <target xmi:type="simplepdl:Process" href="My.miniProjet.simplepdl#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_G8VMoIWOEe-xcIKrKNrJsw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_G8ZeEIWOEe-xcIKrKNrJsw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_G8ZeEYWOEe-xcIKrKNrJsw" type="Sirius" element="_G8VMoIWOEe-xcIKrKNrJsw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_G8chYIWOEe-xcIKrKNrJsw" type="2001" element="_G8aFIIWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_G8dvgIWOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_G8dvgYWOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_G8eWlYWOEe-xcIKrKNrJsw" type="3017" element="_G8aFIYWOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_G8eWloWOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8eWl4WOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_G8chYYWOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8chYoWOEe-xcIKrKNrJsw" x="304" y="380" width="199" height="181"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G8dvgoWOEe-xcIKrKNrJsw" type="2001" element="_G8asMYWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_G8dvhYWOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_G8dvhoWOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_G8eWmIWOEe-xcIKrKNrJsw" type="3017" element="_G8asMoWOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_G8eWmYWOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8eWmoWOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_G8dvg4WOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8dvhIWOEe-xcIKrKNrJsw" x="576" y="292" width="265" height="133"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G8dvh4WOEe-xcIKrKNrJsw" type="2001" element="_G8asNIWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_G8dvioWOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_G8dvi4WOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_G8eWm4WOEe-xcIKrKNrJsw" type="3017" element="_G8asNYWOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_G8eWnIWOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8eWnYWOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_G8dviIWOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8dviYWOEe-xcIKrKNrJsw" x="450" y="15" width="337" height="175"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G8eWkIWOEe-xcIKrKNrJsw" type="2001" element="_G8asN4WOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_G8eWk4WOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_G8eWlIWOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_G8eWnoWOEe-xcIKrKNrJsw" type="3017" element="_G8asOIWOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_G8eWn4WOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8eWoIWOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_G8eWkYWOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G8eWkoWOEe-xcIKrKNrJsw" x="496" y="532" width="264" height="133"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dO6d4IWOEe-xcIKrKNrJsw" type="2001" element="_dM4dl4WOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_dO7E8IWOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dO7E8YWOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dO8TEIWOEe-xcIKrKNrJsw" type="3016" element="_dM7g4IWOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_dO8TEYWOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dO8TEoWOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_dO6d4YWOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dO6d4oWOEe-xcIKrKNrJsw" x="32" y="242" width="169" height="139"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dO7E94WOEe-xcIKrKNrJsw" type="2001" element="_dM9WEoWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_dO7sAIWOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dO7sAYWOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dO86I4WOEe-xcIKrKNrJsw" type="3003" element="_dM9WE4WOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_dO86JIWOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dO86JYWOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_dO7E-IWOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dO7E-YWOEe-xcIKrKNrJsw" x="928" y="108" width="241" height="97"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dO7sAoWOEe-xcIKrKNrJsw" type="2001" element="_dM99IIWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_dO7sBYWOEe-xcIKrKNrJsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_dO7sBoWOEe-xcIKrKNrJsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dO9hMIWOEe-xcIKrKNrJsw" type="3003" element="_dM99IYWOEe-xcIKrKNrJsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_dO9hMYWOEe-xcIKrKNrJsw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dO9hMoWOEe-xcIKrKNrJsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_dO7sA4WOEe-xcIKrKNrJsw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dO7sBIWOEe-xcIKrKNrJsw" x="904" y="452" width="181" height="151"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_G8ZeEoWOEe-xcIKrKNrJsw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_GnEjsIZREe-_360Wf5XHxQ" type="4001" element="_GlyKQIZREe-_360Wf5XHxQ" source="_dO7sAoWOEe-xcIKrKNrJsw" target="_G8chYIWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_GnHnAIZREe-_360Wf5XHxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnHnAYZREe-_360Wf5XHxQ" x="-2" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GnJcMIZREe-_360Wf5XHxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnJcMYZREe-_360Wf5XHxQ" x="4" y="13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GnKDQIZREe-_360Wf5XHxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnKDQYZREe-_360Wf5XHxQ" x="5" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_GnEjsYZREe-_360Wf5XHxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_GnEjsoZREe-_360Wf5XHxQ" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GnEjs4ZREe-_360Wf5XHxQ" points="[-90, -9, 501, 48]$[-491, -48, 100, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GnPi0IZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GnPi0YZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_GnPi0oZREe-_360Wf5XHxQ" type="4001" element="_Glz_coZREe-_360Wf5XHxQ" source="_dO7E94WOEe-xcIKrKNrJsw" target="_G8dvgoWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_GnPi1oZREe-_360Wf5XHxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnPi14ZREe-_360Wf5XHxQ" x="5" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GnPi2IZREe-_360Wf5XHxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnPi2YZREe-_360Wf5XHxQ" x="-3" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GnQJ4IZREe-_360Wf5XHxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnQJ4YZREe-_360Wf5XHxQ" x="-3" y="13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_GnPi04ZREe-_360Wf5XHxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_GnPi1IZREe-_360Wf5XHxQ" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GnPi1YZREe-_360Wf5XHxQ" points="[-83, 49, 257, -153]$[-229, 136, 111, -66]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GnQJ4oZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GnQJ44ZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_lawTUIZREe-_360Wf5XHxQ" type="4001" element="_lasB4IZREe-_360Wf5XHxQ" source="_dO6d4IWOEe-xcIKrKNrJsw" target="_G8chYIWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="_lawTVIZREe-_360Wf5XHxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lawTVYZREe-_360Wf5XHxQ" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lawTVoZREe-_360Wf5XHxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lawTV4ZREe-_360Wf5XHxQ" x="-3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lawTWIZREe-_360Wf5XHxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lawTWYZREe-_360Wf5XHxQ" x="-3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lawTUYZREe-_360Wf5XHxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lawTUoZREe-_360Wf5XHxQ" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lawTU4ZREe-_360Wf5XHxQ" points="[85, 47, -202, -112]$[188, 104, -99, -55]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_law6YIZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_law6YYZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="__mau8IZREe-_360Wf5XHxQ" type="4001" element="__luLbIZREe-_360Wf5XHxQ" source="_G8dvgoWOEe-xcIKrKNrJsw" target="_G8chYIWOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="__mau9IZREe-_360Wf5XHxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mau9YZREe-_360Wf5XHxQ" x="1" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__mau9oZREe-_360Wf5XHxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mau94ZREe-_360Wf5XHxQ" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__mau-IZREe-_360Wf5XHxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mau-YZREe-_360Wf5XHxQ" x="1" y="13"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="__mau8YZREe-_360Wf5XHxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="__mau8oZREe-_360Wf5XHxQ" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__mau84ZREe-_360Wf5XHxQ" points="[-132, 48, 173, -64]$[-205, 75, 100, -37]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mbWAIZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mbWAYZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="__mbWAoZREe-_360Wf5XHxQ" type="4001" element="__luydIZREe-_360Wf5XHxQ" source="_G8dvgoWOEe-xcIKrKNrJsw" target="_G8dvh4WOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="__mbWBoZREe-_360Wf5XHxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mbWB4ZREe-_360Wf5XHxQ" x="4" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__mbWCIZREe-_360Wf5XHxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mbWCYZREe-_360Wf5XHxQ" x="-2" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__mbWCoZREe-_360Wf5XHxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mbWC4ZREe-_360Wf5XHxQ" x="1" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="__mbWA4ZREe-_360Wf5XHxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="__mbWBIZREe-_360Wf5XHxQ" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__mbWBYZREe-_360Wf5XHxQ" points="[-24, -66, 66, 190]$[-60, -168, 30, 88]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mbWDIZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mbWDYZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="__mbWDoZREe-_360Wf5XHxQ" type="4001" element="__luyeYZREe-_360Wf5XHxQ" source="_G8eWkIWOEe-xcIKrKNrJsw" target="_G8dvh4WOEe-xcIKrKNrJsw">
+          <children xmi:type="notation:Node" xmi:id="__mbWEoZREe-_360Wf5XHxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mbWE4ZREe-_360Wf5XHxQ" x="9" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__mbWFIZREe-_360Wf5XHxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mbWFYZREe-_360Wf5XHxQ" x="-9" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__mbWFoZREe-_360Wf5XHxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mbWF4ZREe-_360Wf5XHxQ" x="-9" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="__mbWD4ZREe-_360Wf5XHxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="__mbWEIZREe-_360Wf5XHxQ" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__mbWEYZREe-_360Wf5XHxQ" points="[-24, -66, -14, 430]$[-108, -294, -98, 202]$[-52, -408, -42, 88]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mb9EIZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__mb9EYZREe-_360Wf5XHxQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_G8asOoWOEe-xcIKrKNrJsw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_G8asO4WOEe-xcIKrKNrJsw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_G8aFIIWOEe-xcIKrKNrJsw" name="batsignal" incomingEdges="_GlyKQIZREe-_360Wf5XHxQ _lasB4IZREe-_360Wf5XHxQ __luLbIZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.0"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_G8aFIYWOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="239,41,41">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_G8asMYWOEe-xcIKrKNrJsw" name="batpreparation" outgoingEdges="__luLbIZREe-_360Wf5XHxQ __luydIZREe-_360Wf5XHxQ" incomingEdges="_Glz_coZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.2"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_G8asMoWOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="239,41,41">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_G8asNIWOEe-xcIKrKNrJsw" name="batrescousse" incomingEdges="__luydIZREe-_360Wf5XHxQ __luyeYZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.3"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_G8asNYWOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="239,41,41">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_G8asN4WOEe-xcIKrKNrJsw" name="batreparation" outgoingEdges="__luyeYZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.4"/>
+      <semanticElements xmi:type="simplepdl:WorkDefinition" href="My.miniProjet.simplepdl#//@processelement.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_G8asOIWOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="239,41,41">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeWorkDefinition']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dM4dl4WOEe-xcIKrKNrJsw" name="un signal avec une super chauve souris" outgoingEdges="_lasB4IZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:guidance" href="My.miniProjet.simplepdl#//@processelement.1"/>
+      <semanticElements xmi:type="simplepdl:guidance" href="My.miniProjet.simplepdl#//@processelement.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_dM7g4IWOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeGuidance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeGuidance']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dM9WEoWOEe-xcIKrKNrJsw" name="batmobile" outgoingEdges="_Glz_coZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:Ressource" href="My.miniProjet.simplepdl#//@processelement.8"/>
+      <semanticElements xmi:type="simplepdl:Ressource" href="My.miniProjet.simplepdl#//@processelement.8"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_dM9WE4WOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="138,226,52">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeRessource']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeRessource']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_dM99IIWOEe-xcIKrKNrJsw" name="batprojecteur" outgoingEdges="_GlyKQIZREe-_360Wf5XHxQ" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="simplepdl:Ressource" href="My.miniProjet.simplepdl#//@processelement.9"/>
+      <semanticElements xmi:type="simplepdl:Ressource" href="My.miniProjet.simplepdl#//@processelement.9"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_dM99IYWOEe-xcIKrKNrJsw" labelSize="12" labelPosition="node" color="138,226,52">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeRessource']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@nodeMappings[name='nodeRessource']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_GlyKQIZREe-_360Wf5XHxQ" name="3" sourceNode="_dM99IIWOEe-xcIKrKNrJsw" targetNode="_G8aFIIWOEe-xcIKrKNrJsw">
+      <target xmi:type="simplepdl:Need" href="My.miniProjet.simplepdl#//@processelement.0/@need.0"/>
+      <semanticElements xmi:type="simplepdl:Need" href="My.miniProjet.simplepdl#//@processelement.0/@need.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_GlzYYIZREe-_360Wf5XHxQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='Need']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_GlzYYYZREe-_360Wf5XHxQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='Need']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Glz_coZREe-_360Wf5XHxQ" name="1" sourceNode="_dM9WEoWOEe-xcIKrKNrJsw" targetNode="_G8asMYWOEe-xcIKrKNrJsw">
+      <target xmi:type="simplepdl:Need" href="My.miniProjet.simplepdl#//@processelement.2/@need.0"/>
+      <semanticElements xmi:type="simplepdl:Need" href="My.miniProjet.simplepdl#//@processelement.2/@need.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Gl0mgIZREe-_360Wf5XHxQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='Need']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Gl0mgYZREe-_360Wf5XHxQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='Need']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lasB4IZREe-_360Wf5XHxQ" sourceNode="_dM4dl4WOEe-xcIKrKNrJsw" targetNode="_G8aFIIWOEe-xcIKrKNrJsw">
+      <target xmi:type="simplepdl:guidance" href="My.miniProjet.simplepdl#//@processelement.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lasB4YZREe-_360Wf5XHxQ" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='RGuidance']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lasB4oZREe-_360Wf5XHxQ" labelSize="12" labelColor="114,159,207"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='RGuidance']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__luLbIZREe-_360Wf5XHxQ" name="startToStart" sourceNode="_G8asMYWOEe-xcIKrKNrJsw" targetNode="_G8aFIIWOEe-xcIKrKNrJsw">
+      <target xmi:type="simplepdl:WorkSequence" href="My.miniProjet.simplepdl#//@processelement.5"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="My.miniProjet.simplepdl#//@processelement.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="__luycIZREe-_360Wf5XHxQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='EdgWorkSequence']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__luycYZREe-_360Wf5XHxQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='EdgWorkSequence']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__luydIZREe-_360Wf5XHxQ" name="finishToStart" sourceNode="_G8asMYWOEe-xcIKrKNrJsw" targetNode="_G8asNIWOEe-xcIKrKNrJsw">
+      <target xmi:type="simplepdl:WorkSequence" href="My.miniProjet.simplepdl#//@processelement.6"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="My.miniProjet.simplepdl#//@processelement.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="__luydYZREe-_360Wf5XHxQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='EdgWorkSequence']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__luydoZREe-_360Wf5XHxQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='EdgWorkSequence']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="__luyeYZREe-_360Wf5XHxQ" name="finishToStart" sourceNode="_G8asN4WOEe-xcIKrKNrJsw" targetNode="_G8asNIWOEe-xcIKrKNrJsw">
+      <target xmi:type="simplepdl:WorkSequence" href="My.miniProjet.simplepdl#//@processelement.7"/>
+      <semanticElements xmi:type="simplepdl:WorkSequence" href="My.miniProjet.simplepdl#//@processelement.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="__lvZgIZREe-_360Wf5XHxQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='EdgWorkSequence']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__lvZgYZREe-_360Wf5XHxQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer/@edgeMappings[name='EdgWorkSequence']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_G8VzsIWOEe-xcIKrKNrJsw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/miniProjet.simplepdl.design/description/miniProjet.simplepdl.odesign#//@ownedViewpoints[name='miniProjetSimplepldViewpoint']/@ownedRepresentations[name='ProcessDiagram']/@defaultLayer"/>
+    <target xmi:type="simplepdl:Process" href="My.miniProjet.simplepdl#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

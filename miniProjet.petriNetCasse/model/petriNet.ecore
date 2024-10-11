@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="petriNet" nsURI="http://www.example.org/petriNet" nsPrefix="petriNet">
+  <eClassifiers xsi:type="ecore:EClass" href="#//Places"/>
+  <eClassifiers xsi:type="ecore:EClass" href="#//Transition"/>
+  <eClassifiers xsi:type="ecore:EClass" href="#//Arc"/>
+  <eClassifiers xsi:type="ecore:EClass" href="#//Reseau"/>
+  <eClassifiers xsi:type="ecore:EClass" href="#//ElementReseau"/>
+</ecore:EPackage>

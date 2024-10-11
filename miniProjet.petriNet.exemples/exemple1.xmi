@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:Réseau
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://www.example.org/petriNet"
+    xsi:schemaLocation="http://www.example.org/petriNet ../miniProjet.petriNet/model/petriNet.ecore"
+    name="exemple">
+  <réseauelement
+      xsi:type="petriNet:Place"
+      name="producteur"
+      nbJetons="1"
+      arc="//@réseauelement.4 //@réseauelement.5"/>
+  <réseauelement
+      xsi:type="petriNet:Place"
+      name="p2"
+      arc="//@réseauelement.6 //@réseauelement.7"/>
+  <réseauelement
+      xsi:type="petriNet:Transition"
+      name="t1"
+      arc="//@réseauelement.4 //@réseauelement.5 //@réseauelement.6"/>
+  <réseauelement
+      xsi:type="petriNet:Transition"
+      name="t2"
+      arc="//@réseauelement.7"/>
+  <réseauelement
+      xsi:type="petriNet:Arc"
+      name="a1"
+      PlaceToTransition="true"
+      place="//@réseauelement.0"
+      transition="//@réseauelement.2"/>
+  <réseauelement
+      xsi:type="petriNet:Arc"
+      name="a2"
+      place="//@réseauelement.0"
+      transition="//@réseauelement.2"/>
+  <réseauelement
+      xsi:type="petriNet:Arc"
+      name="a3"
+      place="//@réseauelement.1"
+      transition="//@réseauelement.2"/>
+  <réseauelement
+      xsi:type="petriNet:Arc"
+      name="a4"
+      PlaceToTransition="true"
+      place="//@réseauelement.1"
+      transition="//@réseauelement.3"/>
+</petriNet:Réseau>

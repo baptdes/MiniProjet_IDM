@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl" name="batman">
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processelement.5" name="batsignal">
+    <need ressource="//@processelement.9" quantityNeeded="3" used="true"/>
+  </processelement>
+  <processelement xsi:type="simplepdl:guidance" text="un signal avec une super chauve souris" elements="//@processelement.0"/>
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processelement.5 //@processelement.6" name="batpreparation">
+    <need ressource="//@processelement.8" quantityNeeded="1" used="true"/>
+  </processelement>
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processelement.6 //@processelement.7" name="batrescousse"/>
+  <processelement xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processelement.7" name="batreparation"/>
+  <processelement xsi:type="simplepdl:WorkSequence" predecessor="//@processelement.2" successor="//@processelement.0"/>
+  <processelement xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processelement.2" successor="//@processelement.3"/>
+  <processelement xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processelement.4" successor="//@processelement.3"/>
+  <processelement xsi:type="simplepdl:Ressource" quantity="1" name="batmobile"/>
+  <processelement xsi:type="simplepdl:Ressource" quantity="5" name="batprojecteur"/>
+</simplepdl:Process>
