@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl" name="création_logiciel">
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processElements.4 //@processElements.6 //@processElements.7 //@processElements.8" name="Conception"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.6" linksToPredecessors="//@processElements.5" name="Programmation" needs="//@processElements.12"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.4 //@processElements.5" name="RédactionTests" needs="//@processElements.13"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.7 //@processElements.8" name="RédactionDocs"/>
+  <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.2"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.1" successor="//@processElements.2"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToStart" predecessor="//@processElements.0" successor="//@processElements.1"/>
+  <processElements xsi:type="simplepdl:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.3"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.0" successor="//@processElements.3"/>
+  <processElements xsi:type="simplepdl:Guidance" text="C'est chiant à faire les tests et la doc" elements="//@processElements.2 //@processElements.3 //@processElements.1"/>
+  <processElements xsi:type="simplepdl:Guidance" text="Mais c'est nécéssaire !" elements="//@processElements.9"/>
+  <processElements xsi:type="simplepdl:Ressource" needs="//@processElements.12 //@processElements.13" quantity="5" name="Ordinateurs"/>
+  <processElements xsi:type="simplepdl:Need" workdefinition="//@processElements.1" ressource="//@processElements.11" quantityNeeded="2"/>
+  <processElements xsi:type="simplepdl:Need" workdefinition="//@processElements.2" ressource="//@processElements.11" quantityNeeded="1"/>
+</simplepdl:Process>
