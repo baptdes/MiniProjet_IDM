@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+/home/nimdaba/Documents/N7/2A/IDM/miniProjet_workspace/.metadata/.plugins/org.eclipse.jdt.core
+1295968961.index
+681357942.index
+2852280701.index
+1865797976.index

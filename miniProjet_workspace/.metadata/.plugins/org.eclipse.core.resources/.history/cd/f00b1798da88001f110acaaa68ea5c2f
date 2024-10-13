@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/miniProjet.simplePDL/src" modelPluginID="miniProjet.simplePDL"
+    modelName="SimplePDL" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="20.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>SimplePDL.ecore</foreignModel>
+  <genPackages prefix="Simplepdl" disposableProviderFactory="true" ecorePackage="SimplePDL.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="SimplePDL.ecore#//WorkSequenceType">
+      <genEnumLiterals ecoreEnumLiteral="SimplePDL.ecore#//WorkSequenceType/startToStart"/>
+      <genEnumLiterals ecoreEnumLiteral="SimplePDL.ecore#//WorkSequenceType/finishToStart"/>
+      <genEnumLiterals ecoreEnumLiteral="SimplePDL.ecore#//WorkSequenceType/startToFinish"/>
+      <genEnumLiterals ecoreEnumLiteral="SimplePDL.ecore#//WorkSequenceType/finishToFinish"/>
+    </genEnums>
+    <genClasses ecoreClass="SimplePDL.ecore#//Process">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//Process/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//Process/processelement"/>
+    </genClasses>
+    <genClasses ecoreClass="SimplePDL.ecore#//WorkDefinition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//WorkDefinition/linksToSuccessors"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//WorkDefinition/linksToPredecessors"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//WorkDefinition/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//WorkDefinition/need"/>
+    </genClasses>
+    <genClasses ecoreClass="SimplePDL.ecore#//WorkSequence">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//WorkSequence/linkType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//WorkSequence/predecessor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//WorkSequence/successor"/>
+    </genClasses>
+    <genClasses ecoreClass="SimplePDL.ecore#//guidance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//guidance/text"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//guidance/elements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="SimplePDL.ecore#//ProcessElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference SimplePDL.ecore#//ProcessElement/process"/>
+    </genClasses>
+    <genClasses ecoreClass="SimplePDL.ecore#//Need">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//Need/workdefinition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//Need/ressource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//Need/quantityNeeded"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//Need/used"/>
+    </genClasses>
+    <genClasses ecoreClass="SimplePDL.ecore#//Ressource">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimplePDL.ecore#//Ressource/need"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//Ressource/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimplePDL.ecore#//Ressource/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

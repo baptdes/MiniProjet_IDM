@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    xsi:schemaLocation="http://simplepdl ../miniProjet.simplePDL/SimplePDL.ecore"
+    name="création_logiciel">
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processelement.11"
+      linksToPredecessors="//@processelement.4 //@processelement.6 //@processelement.7 //@processelement.8 //@processelement.9"
+      name="Conception"/>
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processelement.6 //@processelement.10"
+      linksToPredecessors="//@processelement.5 //@processelement.11"
+      name="Programmation"/>
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processelement.4 //@processelement.5 //@processelement.9"
+      linksToPredecessors="//@processelement.10"
+      name="RédactionTests"/>
+  <processelement
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processelement.7 //@processelement.8"
+      name="RédactionDocs"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.0"
+      successor="//@processelement.2"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processelement.1"
+      successor="//@processelement.2"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processelement.0"
+      successor="//@processelement.1"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.0"
+      successor="//@processelement.3"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processelement.0"
+      successor="//@processelement.3"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.0"
+      successor="//@processelement.2"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.2"
+      successor="//@processelement.1"/>
+  <processelement
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processelement.1"
+      successor="//@processelement.0"/>
+</simplepdl:Process>

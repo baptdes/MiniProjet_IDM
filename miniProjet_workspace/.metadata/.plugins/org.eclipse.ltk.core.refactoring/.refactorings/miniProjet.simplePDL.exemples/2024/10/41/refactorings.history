@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;miniProjet.simplePDL.exemples/le_pire_pdl.xmi&apos; to &apos;ko-pdl-sujet-modifie.xmi&apos;" description="Rename resource &apos;le_pire_pdl.xmi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="le_pire_pdl.xmi" name="ko-pdl-sujet-modifie.xmi" stamp="1728741797296" updateReferences="true"/>
+</session>
