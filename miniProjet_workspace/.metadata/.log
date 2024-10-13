@@ -549,3 +549,15 @@ java.lang.NullPointerException: Cannot invoke "java.io.File.equals(Object)" beca
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)
+!SESSION 2024-10-13 18:12:03.484 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=21.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.core.resources 2 2 2024-10-13 18:24:18.136
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-10-13 18:24:18.136
+!MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

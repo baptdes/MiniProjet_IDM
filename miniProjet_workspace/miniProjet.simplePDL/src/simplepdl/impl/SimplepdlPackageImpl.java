@@ -289,7 +289,7 @@ public class SimplepdlPackageImpl extends EPackageImpl implements SimplepdlPacka
 	 * @generated
 	 */
 	@Override
-	public EReference getGuidance_ProcessElements() {
+	public EReference getGuidance_Elements() {
 		return (EReference)guidanceEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -459,7 +459,7 @@ public class SimplepdlPackageImpl extends EPackageImpl implements SimplepdlPacka
 
 		guidanceEClass = createEClass(GUIDANCE);
 		createEAttribute(guidanceEClass, GUIDANCE__TEXT);
-		createEReference(guidanceEClass, GUIDANCE__PROCESS_ELEMENTS);
+		createEReference(guidanceEClass, GUIDANCE__ELEMENTS);
 
 		processElementEClass = createEClass(PROCESS_ELEMENT);
 		createEReference(processElementEClass, PROCESS_ELEMENT__PROCESS);
@@ -531,7 +531,7 @@ public class SimplepdlPackageImpl extends EPackageImpl implements SimplepdlPacka
 
 		initEClass(guidanceEClass, Guidance.class, "Guidance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGuidance_Text(), ecorePackage.getEString(), "text", null, 1, 1, Guidance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGuidance_ProcessElements(), this.getProcessElement(), null, "processElements", null, 0, -1, Guidance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGuidance_Elements(), this.getProcessElement(), null, "elements", null, 0, -1, Guidance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(processElementEClass, ProcessElement.class, "ProcessElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProcessElement_Process(), this.getProcess(), this.getProcess_ProcessElements(), "process", null, 1, 1, ProcessElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

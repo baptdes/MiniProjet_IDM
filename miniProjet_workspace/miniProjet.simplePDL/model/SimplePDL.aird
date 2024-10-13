@@ -4,7 +4,7 @@
     <semanticResources>SimplePDL.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_-AKqAIiaEe-RdN7bTKM_dA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__iO5sIiaEe-RdN7bTKM_dA" name="simplepdl class diagram" repPath="#__hsHIIiaEe-RdN7bTKM_dA" changeId="ebb4f399-86c2-4825-80bf-a482b8a878f3">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__iO5sIiaEe-RdN7bTKM_dA" name="simplepdl class diagram" repPath="#__hsHIIiaEe-RdN7bTKM_dA" changeId="17765888-39d5-4ba1-bdac-1e0a30553bb9">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="SimplePDL.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -145,7 +145,7 @@
         <styles xmi:type="notation:DiagramStyle" xmi:id="__iv3EoiaEe-RdN7bTKM_dA"/>
         <edges xmi:type="notation:Edge" xmi:id="_AUk8oIibEe-RdN7bTKM_dA" type="4001" element="_ATpvkIibEe-RdN7bTKM_dA" source="_AUT244ibEe-RdN7bTKM_dA" target="_AUVFA4ibEe-RdN7bTKM_dA">
           <children xmi:type="notation:Node" xmi:id="_AUmx0IibEe-RdN7bTKM_dA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUmx0YibEe-RdN7bTKM_dA" x="44" y="13"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUmx0YibEe-RdN7bTKM_dA" x="57" y="13"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_AUn_8IibEe-RdN7bTKM_dA" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUn_8YibEe-RdN7bTKM_dA" y="-10"/>
@@ -536,9 +536,9 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ATpvkIibEe-RdN7bTKM_dA" name="[0..*] processElements" sourceNode="_AS3scIibEe-RdN7bTKM_dA" targetNode="_AS5hoIibEe-RdN7bTKM_dA">
-      <target xmi:type="ecore:EReference" href="SimplePDL.ecore#//Guidance/processElements"/>
-      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Guidance/processElements"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ATpvkIibEe-RdN7bTKM_dA" name="[0..*] elements" sourceNode="_AS3scIibEe-RdN7bTKM_dA" targetNode="_AS5hoIibEe-RdN7bTKM_dA">
+      <target xmi:type="ecore:EReference" href="SimplePDL.ecore#//Guidance/elements"/>
+      <semanticElements xmi:type="ecore:EReference" href="SimplePDL.ecore#//Guidance/elements"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ATuBAIibEe-RdN7bTKM_dA" routingStyle="manhattan" strokeColor="0,0,0">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ATuoEYibEe-RdN7bTKM_dA" showIcon="false">

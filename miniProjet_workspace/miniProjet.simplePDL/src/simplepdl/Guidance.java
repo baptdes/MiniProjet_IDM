@@ -14,7 +14,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link simplepdl.Guidance#getText <em>Text</em>}</li>
- *   <li>{@link simplepdl.Guidance#getProcessElements <em>Process Elements</em>}</li>
+ *   <li>{@link simplepdl.Guidance#getElements <em>Elements</em>}</li>
  * </ul>
  *
  * @see simplepdl.SimplepdlPackage#getGuidance()
@@ -45,15 +45,15 @@ public interface Guidance extends ProcessElement {
 	void setText(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Process Elements</b></em>' reference list.
+	 * Returns the value of the '<em><b>Elements</b></em>' reference list.
 	 * The list contents are of type {@link simplepdl.ProcessElement}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Process Elements</em>' reference list.
-	 * @see simplepdl.SimplepdlPackage#getGuidance_ProcessElements()
+	 * @return the value of the '<em>Elements</em>' reference list.
+	 * @see simplepdl.SimplepdlPackage#getGuidance_Elements()
 	 * @model
 	 * @generated
 	 */
-	EList<ProcessElement> getProcessElements();
+	EList<ProcessElement> getElements();
 
 } // Guidance

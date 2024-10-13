@@ -306,13 +306,13 @@ public interface SimplepdlPackage extends EPackage {
 	int GUIDANCE__TEXT = PROCESS_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Process Elements</b></em>' reference list.
+	 * The feature id for the '<em><b>Elements</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GUIDANCE__PROCESS_ELEMENTS = PROCESS_ELEMENT_FEATURE_COUNT + 1;
+	int GUIDANCE__ELEMENTS = PROCESS_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Guidance</em>' class.
@@ -631,15 +631,15 @@ public interface SimplepdlPackage extends EPackage {
 	EAttribute getGuidance_Text();
 
 	/**
-	 * Returns the meta object for the reference list '{@link simplepdl.Guidance#getProcessElements <em>Process Elements</em>}'.
+	 * Returns the meta object for the reference list '{@link simplepdl.Guidance#getElements <em>Elements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Process Elements</em>'.
-	 * @see simplepdl.Guidance#getProcessElements()
+	 * @return the meta object for the reference list '<em>Elements</em>'.
+	 * @see simplepdl.Guidance#getElements()
 	 * @see #getGuidance()
 	 * @generated
 	 */
-	EReference getGuidance_ProcessElements();
+	EReference getGuidance_Elements();
 
 	/**
 	 * Returns the meta object for class '{@link simplepdl.ProcessElement <em>Process Element</em>}'.
@@ -913,12 +913,12 @@ public interface SimplepdlPackage extends EPackage {
 		EAttribute GUIDANCE__TEXT = eINSTANCE.getGuidance_Text();
 
 		/**
-		 * The meta object literal for the '<em><b>Process Elements</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Elements</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GUIDANCE__PROCESS_ELEMENTS = eINSTANCE.getGuidance_ProcessElements();
+		EReference GUIDANCE__ELEMENTS = eINSTANCE.getGuidance_Elements();
 
 		/**
 		 * The meta object literal for the '{@link simplepdl.impl.ProcessElementImpl <em>Process Element</em>}' class.

@@ -27,7 +27,7 @@ import simplepdl.SimplepdlPackage;
  * </p>
  * <ul>
  *   <li>{@link simplepdl.impl.GuidanceImpl#getText <em>Text</em>}</li>
- *   <li>{@link simplepdl.impl.GuidanceImpl#getProcessElements <em>Process Elements</em>}</li>
+ *   <li>{@link simplepdl.impl.GuidanceImpl#getElements <em>Elements</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,14 +54,14 @@ public class GuidanceImpl extends ProcessElementImpl implements Guidance {
 	protected String text = TEXT_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getProcessElements() <em>Process Elements</em>}' reference list.
+	 * The cached value of the '{@link #getElements() <em>Elements</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcessElements()
+	 * @see #getElements()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<ProcessElement> processElements;
+	protected EList<ProcessElement> elements;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,11 +111,11 @@ public class GuidanceImpl extends ProcessElementImpl implements Guidance {
 	 * @generated
 	 */
 	@Override
-	public EList<ProcessElement> getProcessElements() {
-		if (processElements == null) {
-			processElements = new EObjectResolvingEList<ProcessElement>(ProcessElement.class, this, SimplepdlPackage.GUIDANCE__PROCESS_ELEMENTS);
+	public EList<ProcessElement> getElements() {
+		if (elements == null) {
+			elements = new EObjectResolvingEList<ProcessElement>(ProcessElement.class, this, SimplepdlPackage.GUIDANCE__ELEMENTS);
 		}
-		return processElements;
+		return elements;
 	}
 
 	/**
@@ -128,8 +128,8 @@ public class GuidanceImpl extends ProcessElementImpl implements Guidance {
 		switch (featureID) {
 			case SimplepdlPackage.GUIDANCE__TEXT:
 				return getText();
-			case SimplepdlPackage.GUIDANCE__PROCESS_ELEMENTS:
-				return getProcessElements();
+			case SimplepdlPackage.GUIDANCE__ELEMENTS:
+				return getElements();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -146,9 +146,9 @@ public class GuidanceImpl extends ProcessElementImpl implements Guidance {
 			case SimplepdlPackage.GUIDANCE__TEXT:
 				setText((String)newValue);
 				return;
-			case SimplepdlPackage.GUIDANCE__PROCESS_ELEMENTS:
-				getProcessElements().clear();
-				getProcessElements().addAll((Collection<? extends ProcessElement>)newValue);
+			case SimplepdlPackage.GUIDANCE__ELEMENTS:
+				getElements().clear();
+				getElements().addAll((Collection<? extends ProcessElement>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -165,8 +165,8 @@ public class GuidanceImpl extends ProcessElementImpl implements Guidance {
 			case SimplepdlPackage.GUIDANCE__TEXT:
 				setText(TEXT_EDEFAULT);
 				return;
-			case SimplepdlPackage.GUIDANCE__PROCESS_ELEMENTS:
-				getProcessElements().clear();
+			case SimplepdlPackage.GUIDANCE__ELEMENTS:
+				getElements().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -182,8 +182,8 @@ public class GuidanceImpl extends ProcessElementImpl implements Guidance {
 		switch (featureID) {
 			case SimplepdlPackage.GUIDANCE__TEXT:
 				return TEXT_EDEFAULT == null ? text != null : !TEXT_EDEFAULT.equals(text);
-			case SimplepdlPackage.GUIDANCE__PROCESS_ELEMENTS:
-				return processElements != null && !processElements.isEmpty();
+			case SimplepdlPackage.GUIDANCE__ELEMENTS:
+				return elements != null && !elements.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
