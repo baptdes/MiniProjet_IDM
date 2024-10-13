@@ -42,6 +42,11 @@ junit-platform-suite-commons,1.10.0,file:/home/nimdaba/.p2/pool/plugins/junit-pl
 junit-platform-suite-engine,1.10.0,file:/home/nimdaba/.p2/pool/plugins/junit-platform-suite-engine_1.10.0.jar,4,false
 junit-vintage-engine,5.10.0,file:/home/nimdaba/.p2/pool/plugins/junit-vintage-engine_5.10.0.jar,4,false
 lpg.runtime.java,2.0.17.v201004271640,file:/home/nimdaba/.p2/pool/plugins/lpg.runtime.java_2.0.17.v201004271640.jar,4,false
+miniProjet.pdlXtext,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.pdlXtext/,4,false
+miniProjet.pdlXtext.ide,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.pdlXtext.ide/,4,false
+miniProjet.pdlXtext.tests,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.pdlXtext.tests/,4,false
+miniProjet.pdlXtext.ui,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.pdlXtext.ui/,4,false
+miniProjet.pdlXtext.ui.tests,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.pdlXtext.ui.tests/,4,false
 miniProjet.petri,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.petri/,4,false
 miniProjet.simplePDL,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.simplePDL/,4,false
 miniProjet.simplePDL.edit,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.simplePDL.edit/,4,false

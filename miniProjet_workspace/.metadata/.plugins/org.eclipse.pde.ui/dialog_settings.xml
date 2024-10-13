@@ -7,4 +7,14 @@
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="configure_problem_severity_dialog_id_compiler" value="false"/>
+	</section>
+	<section name="pde_compiler_errorwarnings_block">
+		<item key="0" value="false"/>
+		<item key="1" value="false"/>
+		<item key="2" value="false"/>
+		<item key="3" value="true"/>
+		<item key="4" value="false"/>
+	</section>
 </section>
