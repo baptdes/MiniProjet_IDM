@@ -44,6 +44,9 @@ junit-vintage-engine,5.10.0,file:/home/nimdaba/.p2/pool/plugins/junit-vintage-en
 lpg.runtime.java,2.0.17.v201004271640,file:/home/nimdaba/.p2/pool/plugins/lpg.runtime.java_2.0.17.v201004271640.jar,4,false
 miniProjet.petri,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.petri/,4,false
 miniProjet.simplePDL,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.simplePDL/,4,false
+miniProjet.simplePDL.edit,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.simplePDL.edit/,4,false
+miniProjet.simplePDL.editor,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.simplePDL.editor/,4,false
+miniProjet.simplePDL.tests,1.0.0.qualifier,file:/home/nimdaba/Documents/N7/2A/IDM/MiniProjet_IDM/miniProjet_workspace/miniProjet.simplePDL.tests/,4,false
 net.i2p.crypto.eddsa,0.3.0.v20220506-1020,file:/home/nimdaba/.p2/pool/plugins/net.i2p.crypto.eddsa_0.3.0.v20220506-1020.jar,4,false
 org.antlr.runtime,4.7.2.v20221112-0806,file:/home/nimdaba/.p2/pool/plugins/org.antlr.runtime_4.7.2.v20221112-0806.jar,4,false
 org.antlr.runtime,3.2.0.v20230929-1400,file:/home/nimdaba/.p2/pool/plugins/org.antlr.runtime_3.2.0.v20230929-1400.jar,4,false
