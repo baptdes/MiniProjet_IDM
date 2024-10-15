@@ -11,9 +11,7 @@ ProcessElement :
 	WorkDefinition | WorkSequence | Guidance | Ressource | Need;
 
 WorkDefinition :
-	'wd' name=ID '{'
-	    need +=Need*
-	'}' ;
+	'wd' name=ID;
 
 WorkSequence :
 	'ws' linkType=WorkSequenceType
@@ -32,6 +30,7 @@ Ressource :
 ;
 
 Need : 
+	workdefinition = [WorkDefinition]
 	'need' quantityNeeded=INT 
 	'from' ressource = [Ressource]
 ;

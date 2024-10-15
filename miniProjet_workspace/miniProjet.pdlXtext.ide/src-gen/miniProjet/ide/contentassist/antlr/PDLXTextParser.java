@@ -42,7 +42,6 @@ public class PDLXTextParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getProcessAccess().getNameAssignment_1(), "rule__Process__NameAssignment_1");
 			builder.put(grammarAccess.getProcessAccess().getProcessElementsAssignment_3(), "rule__Process__ProcessElementsAssignment_3");
 			builder.put(grammarAccess.getWorkDefinitionAccess().getNameAssignment_1(), "rule__WorkDefinition__NameAssignment_1");
-			builder.put(grammarAccess.getWorkDefinitionAccess().getNeedAssignment_3(), "rule__WorkDefinition__NeedAssignment_3");
 			builder.put(grammarAccess.getWorkSequenceAccess().getLinkTypeAssignment_1(), "rule__WorkSequence__LinkTypeAssignment_1");
 			builder.put(grammarAccess.getWorkSequenceAccess().getPredecessorAssignment_3(), "rule__WorkSequence__PredecessorAssignment_3");
 			builder.put(grammarAccess.getWorkSequenceAccess().getSuccessorAssignment_5(), "rule__WorkSequence__SuccessorAssignment_5");
@@ -50,8 +49,9 @@ public class PDLXTextParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getGuidanceAccess().getElementsAssignment_3(), "rule__Guidance__ElementsAssignment_3");
 			builder.put(grammarAccess.getRessourceAccess().getNameAssignment_1(), "rule__Ressource__NameAssignment_1");
 			builder.put(grammarAccess.getRessourceAccess().getQuantityAssignment_3(), "rule__Ressource__QuantityAssignment_3");
-			builder.put(grammarAccess.getNeedAccess().getQuantityNeededAssignment_1(), "rule__Need__QuantityNeededAssignment_1");
-			builder.put(grammarAccess.getNeedAccess().getRessourceAssignment_3(), "rule__Need__RessourceAssignment_3");
+			builder.put(grammarAccess.getNeedAccess().getWorkdefinitionAssignment_0(), "rule__Need__WorkdefinitionAssignment_0");
+			builder.put(grammarAccess.getNeedAccess().getQuantityNeededAssignment_2(), "rule__Need__QuantityNeededAssignment_2");
+			builder.put(grammarAccess.getNeedAccess().getRessourceAssignment_4(), "rule__Need__RessourceAssignment_4");
 		}
 	}
 	

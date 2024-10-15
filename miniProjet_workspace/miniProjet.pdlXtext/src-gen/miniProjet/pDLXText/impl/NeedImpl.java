@@ -6,6 +6,7 @@ package miniProjet.pDLXText.impl;
 import miniProjet.pDLXText.Need;
 import miniProjet.pDLXText.PDLXTextPackage;
 import miniProjet.pDLXText.Ressource;
+import miniProjet.pDLXText.WorkDefinition;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -22,6 +23,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link miniProjet.pDLXText.impl.NeedImpl#getWorkdefinition <em>Workdefinition</em>}</li>
  *   <li>{@link miniProjet.pDLXText.impl.NeedImpl#getQuantityNeeded <em>Quantity Needed</em>}</li>
  *   <li>{@link miniProjet.pDLXText.impl.NeedImpl#getRessource <em>Ressource</em>}</li>
  * </ul>
@@ -30,6 +32,16 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class NeedImpl extends ProcessElementImpl implements Need
 {
+  /**
+   * The cached value of the '{@link #getWorkdefinition() <em>Workdefinition</em>}' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getWorkdefinition()
+   * @generated
+   * @ordered
+   */
+  protected WorkDefinition workdefinition;
+
   /**
    * The default value of the '{@link #getQuantityNeeded() <em>Quantity Needed</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -79,6 +91,51 @@ public class NeedImpl extends ProcessElementImpl implements Need
   protected EClass eStaticClass()
   {
     return PDLXTextPackage.Literals.NEED;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public WorkDefinition getWorkdefinition()
+  {
+    if (workdefinition != null && workdefinition.eIsProxy())
+    {
+      InternalEObject oldWorkdefinition = (InternalEObject)workdefinition;
+      workdefinition = (WorkDefinition)eResolveProxy(oldWorkdefinition);
+      if (workdefinition != oldWorkdefinition)
+      {
+        if (eNotificationRequired())
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, PDLXTextPackage.NEED__WORKDEFINITION, oldWorkdefinition, workdefinition));
+      }
+    }
+    return workdefinition;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public WorkDefinition basicGetWorkdefinition()
+  {
+    return workdefinition;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public void setWorkdefinition(WorkDefinition newWorkdefinition)
+  {
+    WorkDefinition oldWorkdefinition = workdefinition;
+    workdefinition = newWorkdefinition;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, PDLXTextPackage.NEED__WORKDEFINITION, oldWorkdefinition, workdefinition));
   }
 
   /**
@@ -161,6 +218,9 @@ public class NeedImpl extends ProcessElementImpl implements Need
   {
     switch (featureID)
     {
+      case PDLXTextPackage.NEED__WORKDEFINITION:
+        if (resolve) return getWorkdefinition();
+        return basicGetWorkdefinition();
       case PDLXTextPackage.NEED__QUANTITY_NEEDED:
         return getQuantityNeeded();
       case PDLXTextPackage.NEED__RESSOURCE:
@@ -180,6 +240,9 @@ public class NeedImpl extends ProcessElementImpl implements Need
   {
     switch (featureID)
     {
+      case PDLXTextPackage.NEED__WORKDEFINITION:
+        setWorkdefinition((WorkDefinition)newValue);
+        return;
       case PDLXTextPackage.NEED__QUANTITY_NEEDED:
         setQuantityNeeded((Integer)newValue);
         return;
@@ -200,6 +263,9 @@ public class NeedImpl extends ProcessElementImpl implements Need
   {
     switch (featureID)
     {
+      case PDLXTextPackage.NEED__WORKDEFINITION:
+        setWorkdefinition((WorkDefinition)null);
+        return;
       case PDLXTextPackage.NEED__QUANTITY_NEEDED:
         setQuantityNeeded(QUANTITY_NEEDED_EDEFAULT);
         return;
@@ -220,6 +286,8 @@ public class NeedImpl extends ProcessElementImpl implements Need
   {
     switch (featureID)
     {
+      case PDLXTextPackage.NEED__WORKDEFINITION:
+        return workdefinition != null;
       case PDLXTextPackage.NEED__QUANTITY_NEEDED:
         return quantityNeeded != QUANTITY_NEEDED_EDEFAULT;
       case PDLXTextPackage.NEED__RESSOURCE:

@@ -3,6 +3,8 @@
   <semanticResources>ko-pdl-sujet-modifie.xmi</semanticResources>
   <semanticResources>pdl-sujet.xmi</semanticResources>
   <semanticResources>exemple.pdlxtext</semanticResources>
+  <semanticResources>testATLXText.simplepdl</semanticResources>
+  <semanticResources>handMadeXText.xmi</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" uid="_BtLj4ImDEe-FP7SUL2OEMw">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/miniProjet.simplePDL.design/description/simplepdl.odesign#//@ownedViewpoints[name='simplepdlViewpoint']"/>
   </ownedViews>

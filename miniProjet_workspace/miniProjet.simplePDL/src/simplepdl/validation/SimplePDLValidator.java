@@ -4,7 +4,9 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 
 import simplepdl.Guidance;
+import simplepdl.Need;
 import simplepdl.ProcessElement;
+import simplepdl.Ressource;
 import simplepdl.SimplepdlPackage;
 import simplepdl.WorkDefinition;
 import simplepdl.WorkSequence;
@@ -115,6 +117,62 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 		
 		return null;
 	}
+	
+	/**
+	 * Méthode appelée lorsque l'objet visité est une Ressource.
+	 * @param object élément visité
+	 * @return résultat de validation (null ici, ce qui permet de poursuivre la visite
+	 * vers les classes parentes, le cas échéant)
+	 */
+	@Override
+	public Boolean caseRessource(Ressource object) {
+		// 1 - Nom pas vide et correctement écrit
+		this.result.recordIfFailed(
+				object.getName() != null || object.getName().matches(IDENT_REGEX), 
+				object, 
+				"Un nom de la ressource ne respecte pas les conventions Java");
+		
+		// 2 - Le nom d'une ressource doit être unique
+		this.result.recordIfFailed(
+				object.getProcess().getProcessElements().stream()
+					.filter(p -> p.eClass().getClassifierID() == SimplepdlPackage.WORK_DEFINITION)
+					.allMatch(pe -> (pe.equals(object) || !((WorkDefinition) pe).getName().contains(object.getName()))),
+				object, 
+				"Le nom de la ressource (" + object.getName() + ") n'est pas unique");
+		
+		// 3 - Le nombre de ressource doit être strictement positif
+		this.result.recordIfFailed(
+				object.getQuantity() > 0, 
+				object, 
+				"La quantité de la ressource (" + object.getName() + ") est négatif ou nul");
+		
+		// 4 - Les besoins ne doivent pas dépassé la quantité
+		this.result.recordIfFailed(
+			    object.getNeeds().stream()
+			        .mapToInt(n -> n.getQuantityNeeded()).sum() <= object.getQuantity(), 
+			    object, 
+			    "Les besoins de la ressource (" + object.getName() + ") dépassent la quantité disponible"
+		);
+		
+		return null;
+	}
+	
+	/**
+	 * Méthode appelée lorsque l'objet visité est un Need.
+	 * @param object élément visité
+	 * @return résultat de validation (null ici, ce qui permet de poursuivre la visite
+	 * vers les classes parentes, le cas échéant)
+	 */
+	@Override
+	public Boolean caseNeed(Need object) {
+		// 1 - Un besoin doit être positif
+		this.result.recordIfFailed(
+				object.getQuantityNeeded() > 0, 
+				object, 
+				"Le besoin est négatif ou nul");
+		
+		return null;
+	}
 
 	/**
 	 * Méthode appelée lorsque l'objet visité est une WorkSequence.
@@ -130,6 +188,15 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 				object,
 				"La dépendance relie l'activité " + object.getPredecessor().getName() + " à elle-même");
 		
+		// 2 - Deux WorkSequence ne peuvent pas avoir le même prédécesseur et le même successeur ainsi que le même type 
+		this.result.recordIfFailed(
+				object.getProcess().getProcessElements().stream()
+					.filter(p -> p.eClass().getClassifierID() == SimplepdlPackage.WORK_SEQUENCE)
+					.filter(p -> ((WorkSequence) p).getPredecessor().equals(object.getPredecessor()) && ((WorkSequence) p).getSuccessor().equals(object.getSuccessor()))
+					.allMatch(pe -> (pe.equals(object) || !(((WorkSequence) pe).getLinkType().equals(object.getLinkType())))),
+				object, 
+				"Il y a deux dépendances différentes de même type entre deux activités");
+		
 		return null;
 	}
 
@@ -141,6 +208,12 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 	 */
 	@Override
 	public Boolean caseGuidance(Guidance object) {
+		// 1 - Texte pas vide
+		this.result.recordIfFailed(
+				object.getText() != null, 
+				object, 
+				"La guidance a un texte vide");
+		
 		return null;
 	}
 

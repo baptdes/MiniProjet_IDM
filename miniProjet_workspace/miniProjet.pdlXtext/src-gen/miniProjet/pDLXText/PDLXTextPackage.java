@@ -134,22 +134,13 @@ public interface PDLXTextPackage extends EPackage
   int WORK_DEFINITION__NAME = PROCESS_ELEMENT_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Need</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int WORK_DEFINITION__NEED = PROCESS_ELEMENT_FEATURE_COUNT + 1;
-
-  /**
    * The number of structural features of the '<em>Work Definition</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int WORK_DEFINITION_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 2;
+  int WORK_DEFINITION_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link miniProjet.pDLXText.impl.WorkSequenceImpl <em>Work Sequence</em>}' class.
@@ -282,13 +273,22 @@ public interface PDLXTextPackage extends EPackage
   int NEED = 6;
 
   /**
+   * The feature id for the '<em><b>Workdefinition</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NEED__WORKDEFINITION = PROCESS_ELEMENT_FEATURE_COUNT + 0;
+
+  /**
    * The feature id for the '<em><b>Quantity Needed</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int NEED__QUANTITY_NEEDED = PROCESS_ELEMENT_FEATURE_COUNT + 0;
+  int NEED__QUANTITY_NEEDED = PROCESS_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Ressource</b></em>' reference.
@@ -297,7 +297,7 @@ public interface PDLXTextPackage extends EPackage
    * @generated
    * @ordered
    */
-  int NEED__RESSOURCE = PROCESS_ELEMENT_FEATURE_COUNT + 1;
+  int NEED__RESSOURCE = PROCESS_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Need</em>' class.
@@ -306,7 +306,7 @@ public interface PDLXTextPackage extends EPackage
    * @generated
    * @ordered
    */
-  int NEED_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 2;
+  int NEED_FEATURE_COUNT = PROCESS_ELEMENT_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link miniProjet.pDLXText.WorkSequenceType <em>Work Sequence Type</em>}' enum.
@@ -381,17 +381,6 @@ public interface PDLXTextPackage extends EPackage
    * @generated
    */
   EAttribute getWorkDefinition_Name();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link miniProjet.pDLXText.WorkDefinition#getNeed <em>Need</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Need</em>'.
-   * @see miniProjet.pDLXText.WorkDefinition#getNeed()
-   * @see #getWorkDefinition()
-   * @generated
-   */
-  EReference getWorkDefinition_Need();
 
   /**
    * Returns the meta object for class '{@link miniProjet.pDLXText.WorkSequence <em>Work Sequence</em>}'.
@@ -511,6 +500,17 @@ public interface PDLXTextPackage extends EPackage
   EClass getNeed();
 
   /**
+   * Returns the meta object for the reference '{@link miniProjet.pDLXText.Need#getWorkdefinition <em>Workdefinition</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Workdefinition</em>'.
+   * @see miniProjet.pDLXText.Need#getWorkdefinition()
+   * @see #getNeed()
+   * @generated
+   */
+  EReference getNeed_Workdefinition();
+
+  /**
    * Returns the meta object for the attribute '{@link miniProjet.pDLXText.Need#getQuantityNeeded <em>Quantity Needed</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -620,14 +620,6 @@ public interface PDLXTextPackage extends EPackage
     EAttribute WORK_DEFINITION__NAME = eINSTANCE.getWorkDefinition_Name();
 
     /**
-     * The meta object literal for the '<em><b>Need</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference WORK_DEFINITION__NEED = eINSTANCE.getWorkDefinition_Need();
-
-    /**
      * The meta object literal for the '{@link miniProjet.pDLXText.impl.WorkSequenceImpl <em>Work Sequence</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -722,6 +714,14 @@ public interface PDLXTextPackage extends EPackage
      * @generated
      */
     EClass NEED = eINSTANCE.getNeed();
+
+    /**
+     * The meta object literal for the '<em><b>Workdefinition</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference NEED__WORKDEFINITION = eINSTANCE.getNeed_Workdefinition();
 
     /**
      * The meta object literal for the '<em><b>Quantity Needed</b></em>' attribute feature.

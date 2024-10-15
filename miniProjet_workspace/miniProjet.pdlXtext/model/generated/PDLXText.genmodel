@@ -19,7 +19,6 @@
     <genClasses ecoreClass="PDLXText.ecore#//ProcessElement"/>
     <genClasses ecoreClass="PDLXText.ecore#//WorkDefinition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDLXText.ecore#//WorkDefinition/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDLXText.ecore#//WorkDefinition/need"/>
     </genClasses>
     <genClasses ecoreClass="PDLXText.ecore#//WorkSequence">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDLXText.ecore#//WorkSequence/linkType"/>
@@ -35,6 +34,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDLXText.ecore#//Ressource/quantity"/>
     </genClasses>
     <genClasses ecoreClass="PDLXText.ecore#//Need">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDLXText.ecore#//Need/workdefinition"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDLXText.ecore#//Need/quantityNeeded"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDLXText.ecore#//Need/ressource"/>
     </genClasses>

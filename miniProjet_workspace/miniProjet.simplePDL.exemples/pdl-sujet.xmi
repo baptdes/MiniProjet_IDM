@@ -4,8 +4,7 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:simplepdl="http://simplepdl"
-    xsi:schemaLocation="http://simplepdl ../miniProjet.simplePDL/SimplePDL.ecore"
-    name="création_logiciel">
+    name="Developpement">
   <processElements
       xsi:type="simplepdl:WorkDefinition"
       linksToPredecessors="//@processElements.4 //@processElements.6 //@processElements.7 //@processElements.8"

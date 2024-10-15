@@ -81,19 +81,22 @@ public class PDLXTextSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Need returns Need
 	 *
 	 * Constraint:
-	 *     (quantityNeeded=INT ressource=[Ressource|ID])
+	 *     (workdefinition=[WorkDefinition|ID] quantityNeeded=INT ressource=[Ressource|ID])
 	 * </pre>
 	 */
 	protected void sequence_Need(ISerializationContext context, Need semanticObject) {
 		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, PDLXTextPackage.Literals.NEED__WORKDEFINITION) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDLXTextPackage.Literals.NEED__WORKDEFINITION));
 			if (transientValues.isValueTransient(semanticObject, PDLXTextPackage.Literals.NEED__QUANTITY_NEEDED) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDLXTextPackage.Literals.NEED__QUANTITY_NEEDED));
 			if (transientValues.isValueTransient(semanticObject, PDLXTextPackage.Literals.NEED__RESSOURCE) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDLXTextPackage.Literals.NEED__RESSOURCE));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getNeedAccess().getQuantityNeededINTTerminalRuleCall_1_0(), semanticObject.getQuantityNeeded());
-		feeder.accept(grammarAccess.getNeedAccess().getRessourceRessourceIDTerminalRuleCall_3_0_1(), semanticObject.eGet(PDLXTextPackage.Literals.NEED__RESSOURCE, false));
+		feeder.accept(grammarAccess.getNeedAccess().getWorkdefinitionWorkDefinitionIDTerminalRuleCall_0_0_1(), semanticObject.eGet(PDLXTextPackage.Literals.NEED__WORKDEFINITION, false));
+		feeder.accept(grammarAccess.getNeedAccess().getQuantityNeededINTTerminalRuleCall_2_0(), semanticObject.getQuantityNeeded());
+		feeder.accept(grammarAccess.getNeedAccess().getRessourceRessourceIDTerminalRuleCall_4_0_1(), semanticObject.eGet(PDLXTextPackage.Literals.NEED__RESSOURCE, false));
 		feeder.finish();
 	}
 	
@@ -143,11 +146,17 @@ public class PDLXTextSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     WorkDefinition returns WorkDefinition
 	 *
 	 * Constraint:
-	 *     (name=ID need+=Need*)
+	 *     name=ID
 	 * </pre>
 	 */
 	protected void sequence_WorkDefinition(ISerializationContext context, WorkDefinition semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, PDLXTextPackage.Literals.WORK_DEFINITION__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, PDLXTextPackage.Literals.WORK_DEFINITION__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getWorkDefinitionAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.finish();
 	}
 	
 	

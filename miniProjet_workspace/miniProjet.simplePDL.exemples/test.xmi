@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl">
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.1" name="Courses" needs="//@processElements.4"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.2" successor="//@processElements.0"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processElements.1" name="Faire Liste"/>
+  <processElements xsi:type="simplepdl:Guidance" text="C'est chiant les courses" elements="//@processElements.0"/>
+  <processElements xsi:type="simplepdl:Need" workdefinition="//@processElements.0" ressource="//@processElements.5" quantityNeeded="2"/>
+  <processElements xsi:type="simplepdl:Ressource" needs="//@processElements.4" quantity="1" name="Cadi"/>
+</simplepdl:Process>

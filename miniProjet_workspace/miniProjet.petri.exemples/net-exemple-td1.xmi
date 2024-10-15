@@ -12,6 +12,7 @@
   <reseauElements
       xsi:type="petriNet:Place"
       name="php"
+      nbJetons="1"
       arcs="//@reseauElements.15 //@reseauElements.16"/>
   <reseauElements
       xsi:type="petriNet:Place"

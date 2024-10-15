@@ -230,33 +230,6 @@ ruleWorkDefinition returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_2='{'
-		{
-			newLeafNode(otherlv_2, grammarAccess.getWorkDefinitionAccess().getLeftCurlyBracketKeyword_2());
-		}
-		(
-			(
-				{
-					newCompositeNode(grammarAccess.getWorkDefinitionAccess().getNeedNeedParserRuleCall_3_0());
-				}
-				lv_need_3_0=ruleNeed
-				{
-					if ($current==null) {
-						$current = createModelElementForParent(grammarAccess.getWorkDefinitionRule());
-					}
-					add(
-						$current,
-						"need",
-						lv_need_3_0,
-						"miniProjet.PDLXText.Need");
-					afterParserOrEnumRuleCall();
-				}
-			)
-		)*
-		otherlv_4='}'
-		{
-			newLeafNode(otherlv_4, grammarAccess.getWorkDefinitionAccess().getRightCurlyBracketKeyword_4());
-		}
 	)
 ;
 
@@ -477,15 +450,28 @@ ruleNeed returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='need'
+		(
+			(
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getNeedRule());
+					}
+				}
+				otherlv_0=RULE_ID
+				{
+					newLeafNode(otherlv_0, grammarAccess.getNeedAccess().getWorkdefinitionWorkDefinitionCrossReference_0_0());
+				}
+			)
+		)
+		otherlv_1='need'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getNeedAccess().getNeedKeyword_0());
+			newLeafNode(otherlv_1, grammarAccess.getNeedAccess().getNeedKeyword_1());
 		}
 		(
 			(
-				lv_quantityNeeded_1_0=RULE_INT
+				lv_quantityNeeded_2_0=RULE_INT
 				{
-					newLeafNode(lv_quantityNeeded_1_0, grammarAccess.getNeedAccess().getQuantityNeededINTTerminalRuleCall_1_0());
+					newLeafNode(lv_quantityNeeded_2_0, grammarAccess.getNeedAccess().getQuantityNeededINTTerminalRuleCall_2_0());
 				}
 				{
 					if ($current==null) {
@@ -494,14 +480,14 @@ ruleNeed returns [EObject current=null]
 					setWithLastConsumed(
 						$current,
 						"quantityNeeded",
-						lv_quantityNeeded_1_0,
+						lv_quantityNeeded_2_0,
 						"org.eclipse.xtext.common.Terminals.INT");
 				}
 			)
 		)
-		otherlv_2='from'
+		otherlv_3='from'
 		{
-			newLeafNode(otherlv_2, grammarAccess.getNeedAccess().getFromKeyword_2());
+			newLeafNode(otherlv_3, grammarAccess.getNeedAccess().getFromKeyword_3());
 		}
 		(
 			(
@@ -510,9 +496,9 @@ ruleNeed returns [EObject current=null]
 						$current = createModelElement(grammarAccess.getNeedRule());
 					}
 				}
-				otherlv_3=RULE_ID
+				otherlv_4=RULE_ID
 				{
-					newLeafNode(otherlv_3, grammarAccess.getNeedAccess().getRessourceRessourceCrossReference_3_0());
+					newLeafNode(otherlv_4, grammarAccess.getNeedAccess().getRessourceRessourceCrossReference_4_0());
 				}
 			)
 		)

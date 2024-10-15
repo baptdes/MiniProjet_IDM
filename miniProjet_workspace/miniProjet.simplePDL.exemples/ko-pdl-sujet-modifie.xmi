@@ -4,7 +4,6 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:simplepdl="http://simplepdl"
-    xsi:schemaLocation="http://simplepdl ../miniProjet.simplePDL/SimplePDL.ecore"
     name="création_logiciel">
   <processElements
       xsi:type="simplepdl:WorkDefinition"
@@ -15,12 +14,14 @@
       xsi:type="simplepdl:WorkDefinition"
       linksToSuccessors="//@processElements.6 //@processElements.10"
       linksToPredecessors="//@processElements.5 //@processElements.11"
-      name="Programmation"/>
+      name="Programmation"
+      needs="//@processElements.13"/>
   <processElements
       xsi:type="simplepdl:WorkDefinition"
       linksToSuccessors="//@processElements.4 //@processElements.5 //@processElements.9"
       linksToPredecessors="//@processElements.10"
-      name="RédactionTests"/>
+      name="RédactionTests"
+      needs="//@processElements.14"/>
   <processElements
       xsi:type="simplepdl:WorkDefinition"
       linksToSuccessors="//@processElements.7 //@processElements.8"
@@ -60,4 +61,19 @@
       xsi:type="simplepdl:WorkSequence"
       predecessor="//@processElements.1"
       successor="//@processElements.0"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.13 //@processElements.14"
+      quantity="3"
+      name="Computer"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.1"
+      ressource="//@processElements.12"
+      quantityNeeded="2"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.2"
+      ressource="//@processElements.12"
+      quantityNeeded="1"/>
 </simplepdl:Process>

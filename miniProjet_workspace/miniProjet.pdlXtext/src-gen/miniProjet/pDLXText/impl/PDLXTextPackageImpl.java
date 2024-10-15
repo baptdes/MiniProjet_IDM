@@ -219,17 +219,6 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
    * @generated
    */
   @Override
-  public EReference getWorkDefinition_Need()
-  {
-    return (EReference)workDefinitionEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EClass getWorkSequence()
   {
     return workSequenceEClass;
@@ -351,9 +340,20 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
    * @generated
    */
   @Override
+  public EReference getNeed_Workdefinition()
+  {
+    return (EReference)needEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public EAttribute getNeed_QuantityNeeded()
   {
-    return (EAttribute)needEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)needEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -364,7 +364,7 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
   @Override
   public EReference getNeed_Ressource()
   {
-    return (EReference)needEClass.getEStructuralFeatures().get(1);
+    return (EReference)needEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -417,7 +417,6 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
 
     workDefinitionEClass = createEClass(WORK_DEFINITION);
     createEAttribute(workDefinitionEClass, WORK_DEFINITION__NAME);
-    createEReference(workDefinitionEClass, WORK_DEFINITION__NEED);
 
     workSequenceEClass = createEClass(WORK_SEQUENCE);
     createEAttribute(workSequenceEClass, WORK_SEQUENCE__LINK_TYPE);
@@ -433,6 +432,7 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
     createEAttribute(ressourceEClass, RESSOURCE__QUANTITY);
 
     needEClass = createEClass(NEED);
+    createEReference(needEClass, NEED__WORKDEFINITION);
     createEAttribute(needEClass, NEED__QUANTITY_NEEDED);
     createEReference(needEClass, NEED__RESSOURCE);
 
@@ -484,7 +484,6 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
 
     initEClass(workDefinitionEClass, WorkDefinition.class, "WorkDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getWorkDefinition_Name(), ecorePackage.getEString(), "name", null, 0, 1, WorkDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getWorkDefinition_Need(), this.getNeed(), null, "need", null, 0, -1, WorkDefinition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(workSequenceEClass, WorkSequence.class, "WorkSequence", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getWorkSequence_LinkType(), this.getWorkSequenceType(), "linkType", null, 0, 1, WorkSequence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -500,6 +499,7 @@ public class PDLXTextPackageImpl extends EPackageImpl implements PDLXTextPackage
     initEAttribute(getRessource_Quantity(), ecorePackage.getEInt(), "quantity", null, 0, 1, Ressource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(needEClass, Need.class, "Need", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getNeed_Workdefinition(), this.getWorkDefinition(), null, "workdefinition", null, 0, 1, Need.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getNeed_QuantityNeeded(), ecorePackage.getEInt(), "quantityNeeded", null, 0, 1, Need.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getNeed_Ressource(), this.getRessource(), null, "ressource", null, 0, 1, Need.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

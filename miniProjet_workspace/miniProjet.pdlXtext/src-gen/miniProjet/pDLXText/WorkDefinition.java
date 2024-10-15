@@ -3,7 +3,6 @@
  */
 package miniProjet.pDLXText;
 
-import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -15,7 +14,6 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link miniProjet.pDLXText.WorkDefinition#getName <em>Name</em>}</li>
- *   <li>{@link miniProjet.pDLXText.WorkDefinition#getNeed <em>Need</em>}</li>
  * </ul>
  *
  * @see miniProjet.pDLXText.PDLXTextPackage#getWorkDefinition()
@@ -45,17 +43,5 @@ public interface WorkDefinition extends ProcessElement
    * @generated
    */
   void setName(String value);
-
-  /**
-   * Returns the value of the '<em><b>Need</b></em>' containment reference list.
-   * The list contents are of type {@link miniProjet.pDLXText.Need}.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Need</em>' containment reference list.
-   * @see miniProjet.pDLXText.PDLXTextPackage#getWorkDefinition_Need()
-   * @model containment="true"
-   * @generated
-   */
-  EList<Need> getNeed();
 
 } // WorkDefinition

@@ -1,0 +1,65 @@
+module XTextToSimplePDL;
+create OUT : SimplePDL from IN : xtextpdl;
+
+-- Helper to convert WorkSequenceType
+helper def: convertLinkType(x : xtextpdl!WorkSequenceType) : SimplePDL!WorkSequenceType =
+    if x = #start2start then #startToStart
+    else if x = #start2finish then #startToFinish
+    else if x = #finish2start then #finishToStart
+    else #finishToFinish
+    endif endif endif;
+
+-- Process
+rule XProc2SProc {
+    from xp : xtextpdl!Process
+    to sp : SimplePDL!Process (
+        name <- xp.name,
+        processElements <- xp.processElements
+    )
+}
+
+-- WorkDefinition
+rule XWD2SWD {
+    from xwd : xtextpdl!WorkDefinition
+    to swd : SimplePDL!WorkDefinition (
+        name <- xwd.name
+    )
+}
+
+-- WorkSequence
+rule XWS2SWS {
+    from xws : xtextpdl!WorkSequence
+    to sws : SimplePDL!WorkSequence (
+        linkType <- thisModule.convertLinkType(xws.linkType),
+        predecessor <- xws.predecessor,
+        successor <- xws.successor
+    )
+}
+
+-- Guidance
+rule XG2SG {
+    from xg : xtextpdl!Guidance
+    to wg : SimplePDL!Guidance (
+        text <- xg.texte,
+        elements <- xg.elements
+    )
+}
+
+-- Ressource
+rule XR2SR {
+    from xr : xtextpdl!Ressource
+    to wr : SimplePDL!Ressource (
+        quantity <- xr.quantity,
+        name <- xr.name
+    )
+}
+
+-- Need
+rule XN2SN {
+    from xn : xtextpdl!Need
+    to wn : SimplePDL!Need (
+        quantityNeeded <- xn.quantityNeeded,
+        ressource <- xn.ressource,
+		workdefinition <- xn.workdefinition
+    )
+}

@@ -3,24 +3,14 @@
  */
 package miniProjet.pDLXText.impl;
 
-import java.util.Collection;
-
-import miniProjet.pDLXText.Need;
 import miniProjet.pDLXText.PDLXTextPackage;
 import miniProjet.pDLXText.WorkDefinition;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +21,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link miniProjet.pDLXText.impl.WorkDefinitionImpl#getName <em>Name</em>}</li>
- *   <li>{@link miniProjet.pDLXText.impl.WorkDefinitionImpl#getNeed <em>Need</em>}</li>
  * </ul>
  *
  * @generated
@@ -57,16 +46,6 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
    * @ordered
    */
   protected String name = NAME_EDEFAULT;
-
-  /**
-   * The cached value of the '{@link #getNeed() <em>Need</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getNeed()
-   * @generated
-   * @ordered
-   */
-  protected EList<Need> need;
 
   /**
    * <!-- begin-user-doc -->
@@ -120,45 +99,12 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
    * @generated
    */
   @Override
-  public EList<Need> getNeed()
-  {
-    if (need == null)
-    {
-      need = new EObjectContainmentEList<Need>(Need.class, this, PDLXTextPackage.WORK_DEFINITION__NEED);
-    }
-    return need;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
-  {
-    switch (featureID)
-    {
-      case PDLXTextPackage.WORK_DEFINITION__NEED:
-        return ((InternalEList<?>)getNeed()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
     switch (featureID)
     {
       case PDLXTextPackage.WORK_DEFINITION__NAME:
         return getName();
-      case PDLXTextPackage.WORK_DEFINITION__NEED:
-        return getNeed();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -168,7 +114,6 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
    * <!-- end-user-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
@@ -176,10 +121,6 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
     {
       case PDLXTextPackage.WORK_DEFINITION__NAME:
         setName((String)newValue);
-        return;
-      case PDLXTextPackage.WORK_DEFINITION__NEED:
-        getNeed().clear();
-        getNeed().addAll((Collection<? extends Need>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -198,9 +139,6 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
       case PDLXTextPackage.WORK_DEFINITION__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case PDLXTextPackage.WORK_DEFINITION__NEED:
-        getNeed().clear();
-        return;
     }
     super.eUnset(featureID);
   }
@@ -217,8 +155,6 @@ public class WorkDefinitionImpl extends ProcessElementImpl implements WorkDefini
     {
       case PDLXTextPackage.WORK_DEFINITION__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case PDLXTextPackage.WORK_DEFINITION__NEED:
-        return need != null && !need.isEmpty();
     }
     return super.eIsSet(featureID);
   }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pDLXText:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pDLXText="http://www.PDLXText.miniProjet">
+  <processElements
+      xsi:type="pDLXText:WorkDefinition"
+      name="Courses"/>
+  <processElements
+      xsi:type="pDLXText:WorkSequence"
+      linkType="f2s"
+      predecessor="//@processElements.2"
+      successor="//@processElements.0"/>
+  <processElements
+      xsi:type="pDLXText:WorkDefinition"
+      name="Faire Liste"/>
+  <processElements
+      xsi:type="pDLXText:Guidance"
+      texte="C'est chiant les courses"
+      elements="//@processElements.0"/>
+  <processElements
+      xsi:type="pDLXText:Need"
+      workdefinition="//@processElements.0"
+      quantityNeeded="2"
+      ressource="//@processElements.5"/>
+  <processElements
+      xsi:type="pDLXText:Ressource"
+      name="Cadi"
+      quantity="1"/>
+</pDLXText:Process>

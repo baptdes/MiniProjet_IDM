@@ -13,6 +13,7 @@ package miniProjet.pDLXText;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link miniProjet.pDLXText.Need#getWorkdefinition <em>Workdefinition</em>}</li>
  *   <li>{@link miniProjet.pDLXText.Need#getQuantityNeeded <em>Quantity Needed</em>}</li>
  *   <li>{@link miniProjet.pDLXText.Need#getRessource <em>Ressource</em>}</li>
  * </ul>
@@ -23,6 +24,28 @@ package miniProjet.pDLXText;
  */
 public interface Need extends ProcessElement
 {
+  /**
+   * Returns the value of the '<em><b>Workdefinition</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Workdefinition</em>' reference.
+   * @see #setWorkdefinition(WorkDefinition)
+   * @see miniProjet.pDLXText.PDLXTextPackage#getNeed_Workdefinition()
+   * @model
+   * @generated
+   */
+  WorkDefinition getWorkdefinition();
+
+  /**
+   * Sets the value of the '{@link miniProjet.pDLXText.Need#getWorkdefinition <em>Workdefinition</em>}' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Workdefinition</em>' reference.
+   * @see #getWorkdefinition()
+   * @generated
+   */
+  void setWorkdefinition(WorkDefinition value);
+
   /**
    * Returns the value of the '<em><b>Quantity Needed</b></em>' attribute.
    * <!-- begin-user-doc -->
