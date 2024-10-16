@@ -48,7 +48,7 @@ public class ValidatePetriNet {
 	 * @param resultat rÃ©sultat de la validation calculÃ© auparavant
 	 */
 	private static void afficherResultat(ValidationResult resultat) {
-		afficherErreurs("- Réseau", resultat.getRecordedErrorsFor(PetriNetPackage.RÉSEAU));
+		afficherErreurs("- Réseau", resultat.getRecordedErrorsFor(PetriNetPackage.RESEAU));
 		afficherErreurs("- place", resultat.getRecordedErrorsFor(PetriNetPackage.PLACE));
 		afficherErreurs("- arc", resultat.getRecordedErrorsFor(PetriNetPackage.ARC));
 		afficherErreurs("- trasition", resultat.getRecordedErrorsFor(PetriNetPackage.TRANSITION));

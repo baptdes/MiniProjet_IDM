@@ -6,12 +6,12 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>petriNet.ecore</foreignModel>
   <genPackages prefix="PetriNet" disposableProviderFactory="true" ecorePackage="petriNet.ecore#/">
-    <genClasses ecoreClass="petriNet.ecore#//Réseau">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Réseau/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference petriNet.ecore#//Réseau/reseauElements"/>
+    <genClasses ecoreClass="petriNet.ecore#//Reseau">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Reseau/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference petriNet.ecore#//Reseau/reseauElements"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="petriNet.ecore#//RéseauElement">
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference petriNet.ecore#//RéseauElement/reseau"/>
+    <genClasses image="false" ecoreClass="petriNet.ecore#//ReseauElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference petriNet.ecore#//ReseauElement/reseau"/>
     </genClasses>
     <genClasses ecoreClass="petriNet.ecore#//Transition">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute petriNet.ecore#//Transition/name"/>

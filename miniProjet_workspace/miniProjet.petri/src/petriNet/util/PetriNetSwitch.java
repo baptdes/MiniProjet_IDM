@@ -66,36 +66,36 @@ public class PetriNetSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case PetriNetPackage.RÉSEAU: {
-				Réseau réseau = (Réseau)theEObject;
-				T result = caseRéseau(réseau);
+			case PetriNetPackage.RESEAU: {
+				Reseau reseau = (Reseau)theEObject;
+				T result = caseReseau(reseau);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PetriNetPackage.RÉSEAU_ELEMENT: {
-				RéseauElement réseauElement = (RéseauElement)theEObject;
-				T result = caseRéseauElement(réseauElement);
+			case PetriNetPackage.RESEAU_ELEMENT: {
+				ReseauElement reseauElement = (ReseauElement)theEObject;
+				T result = caseReseauElement(reseauElement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case PetriNetPackage.TRANSITION: {
 				Transition transition = (Transition)theEObject;
 				T result = caseTransition(transition);
-				if (result == null) result = caseRéseauElement(transition);
+				if (result == null) result = caseReseauElement(transition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case PetriNetPackage.PLACE: {
 				Place place = (Place)theEObject;
 				T result = casePlace(place);
-				if (result == null) result = caseRéseauElement(place);
+				if (result == null) result = caseReseauElement(place);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case PetriNetPackage.ARC: {
 				Arc arc = (Arc)theEObject;
 				T result = caseArc(arc);
-				if (result == null) result = caseRéseauElement(arc);
+				if (result == null) result = caseReseauElement(arc);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -104,32 +104,32 @@ public class PetriNetSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Réseau</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Reseau</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Réseau</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Reseau</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRéseau(Réseau object) {
+	public T caseReseau(Reseau object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Réseau Element</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Reseau Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Réseau Element</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Reseau Element</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRéseauElement(RéseauElement object) {
+	public T caseReseauElement(ReseauElement object) {
 		return null;
 	}
 

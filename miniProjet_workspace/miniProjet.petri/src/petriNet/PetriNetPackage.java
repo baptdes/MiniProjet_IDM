@@ -57,14 +57,14 @@ public interface PetriNetPackage extends EPackage {
 	PetriNetPackage eINSTANCE = petriNet.impl.PetriNetPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link petriNet.impl.RéseauImpl <em>Réseau</em>}' class.
+	 * The meta object id for the '{@link petriNet.impl.ReseauImpl <em>Reseau</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see petriNet.impl.RéseauImpl
-	 * @see petriNet.impl.PetriNetPackageImpl#getRéseau()
+	 * @see petriNet.impl.ReseauImpl
+	 * @see petriNet.impl.PetriNetPackageImpl#getReseau()
 	 * @generated
 	 */
-	int RÉSEAU = 0;
+	int RESEAU = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -73,7 +73,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU__NAME = 0;
+	int RESEAU__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Reseau Elements</b></em>' containment reference list.
@@ -82,35 +82,35 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU__RESEAU_ELEMENTS = 1;
+	int RESEAU__RESEAU_ELEMENTS = 1;
 
 	/**
-	 * The number of structural features of the '<em>Réseau</em>' class.
+	 * The number of structural features of the '<em>Reseau</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU_FEATURE_COUNT = 2;
+	int RESEAU_FEATURE_COUNT = 2;
 
 	/**
-	 * The number of operations of the '<em>Réseau</em>' class.
+	 * The number of operations of the '<em>Reseau</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU_OPERATION_COUNT = 0;
+	int RESEAU_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link petriNet.impl.RéseauElementImpl <em>Réseau Element</em>}' class.
+	 * The meta object id for the '{@link petriNet.impl.ReseauElementImpl <em>Reseau Element</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see petriNet.impl.RéseauElementImpl
-	 * @see petriNet.impl.PetriNetPackageImpl#getRéseauElement()
+	 * @see petriNet.impl.ReseauElementImpl
+	 * @see petriNet.impl.PetriNetPackageImpl#getReseauElement()
 	 * @generated
 	 */
-	int RÉSEAU_ELEMENT = 1;
+	int RESEAU_ELEMENT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Reseau</b></em>' container reference.
@@ -119,25 +119,25 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU_ELEMENT__RESEAU = 0;
+	int RESEAU_ELEMENT__RESEAU = 0;
 
 	/**
-	 * The number of structural features of the '<em>Réseau Element</em>' class.
+	 * The number of structural features of the '<em>Reseau Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU_ELEMENT_FEATURE_COUNT = 1;
+	int RESEAU_ELEMENT_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Réseau Element</em>' class.
+	 * The number of operations of the '<em>Reseau Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RÉSEAU_ELEMENT_OPERATION_COUNT = 0;
+	int RESEAU_ELEMENT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link petriNet.impl.TransitionImpl <em>Transition</em>}' class.
@@ -156,7 +156,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION__RESEAU = RÉSEAU_ELEMENT__RESEAU;
+	int TRANSITION__RESEAU = RESEAU_ELEMENT__RESEAU;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -165,7 +165,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION__NAME = RÉSEAU_ELEMENT_FEATURE_COUNT + 0;
+	int TRANSITION__NAME = RESEAU_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Arcs</b></em>' reference list.
@@ -174,7 +174,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION__ARCS = RÉSEAU_ELEMENT_FEATURE_COUNT + 1;
+	int TRANSITION__ARCS = RESEAU_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Transition</em>' class.
@@ -183,7 +183,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_FEATURE_COUNT = RÉSEAU_ELEMENT_FEATURE_COUNT + 2;
+	int TRANSITION_FEATURE_COUNT = RESEAU_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Transition</em>' class.
@@ -192,7 +192,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_OPERATION_COUNT = RÉSEAU_ELEMENT_OPERATION_COUNT + 0;
+	int TRANSITION_OPERATION_COUNT = RESEAU_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link petriNet.impl.PlaceImpl <em>Place</em>}' class.
@@ -211,7 +211,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__RESEAU = RÉSEAU_ELEMENT__RESEAU;
+	int PLACE__RESEAU = RESEAU_ELEMENT__RESEAU;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -220,7 +220,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__NAME = RÉSEAU_ELEMENT_FEATURE_COUNT + 0;
+	int PLACE__NAME = RESEAU_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Nb Jetons</b></em>' attribute.
@@ -229,7 +229,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__NB_JETONS = RÉSEAU_ELEMENT_FEATURE_COUNT + 1;
+	int PLACE__NB_JETONS = RESEAU_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Arcs</b></em>' reference list.
@@ -238,7 +238,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE__ARCS = RÉSEAU_ELEMENT_FEATURE_COUNT + 2;
+	int PLACE__ARCS = RESEAU_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Place</em>' class.
@@ -247,7 +247,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_FEATURE_COUNT = RÉSEAU_ELEMENT_FEATURE_COUNT + 3;
+	int PLACE_FEATURE_COUNT = RESEAU_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Place</em>' class.
@@ -256,7 +256,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLACE_OPERATION_COUNT = RÉSEAU_ELEMENT_OPERATION_COUNT + 0;
+	int PLACE_OPERATION_COUNT = RESEAU_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link petriNet.impl.ArcImpl <em>Arc</em>}' class.
@@ -275,7 +275,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__RESEAU = RÉSEAU_ELEMENT__RESEAU;
+	int ARC__RESEAU = RESEAU_ELEMENT__RESEAU;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -284,7 +284,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__NAME = RÉSEAU_ELEMENT_FEATURE_COUNT + 0;
+	int ARC__NAME = RESEAU_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Is Read Arc</b></em>' attribute.
@@ -293,7 +293,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__IS_READ_ARC = RÉSEAU_ELEMENT_FEATURE_COUNT + 1;
+	int ARC__IS_READ_ARC = RESEAU_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Place To Transition</b></em>' attribute.
@@ -302,7 +302,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__PLACE_TO_TRANSITION = RÉSEAU_ELEMENT_FEATURE_COUNT + 2;
+	int ARC__PLACE_TO_TRANSITION = RESEAU_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Place</b></em>' reference.
@@ -311,7 +311,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__PLACE = RÉSEAU_ELEMENT_FEATURE_COUNT + 3;
+	int ARC__PLACE = RESEAU_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Transition</b></em>' reference.
@@ -320,7 +320,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__TRANSITION = RÉSEAU_ELEMENT_FEATURE_COUNT + 4;
+	int ARC__TRANSITION = RESEAU_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Nb Transfered</b></em>' attribute.
@@ -329,7 +329,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC__NB_TRANSFERED = RÉSEAU_ELEMENT_FEATURE_COUNT + 5;
+	int ARC__NB_TRANSFERED = RESEAU_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Arc</em>' class.
@@ -338,7 +338,7 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC_FEATURE_COUNT = RÉSEAU_ELEMENT_FEATURE_COUNT + 6;
+	int ARC_FEATURE_COUNT = RESEAU_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of operations of the '<em>Arc</em>' class.
@@ -347,61 +347,61 @@ public interface PetriNetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARC_OPERATION_COUNT = RÉSEAU_ELEMENT_OPERATION_COUNT + 0;
+	int ARC_OPERATION_COUNT = RESEAU_ELEMENT_OPERATION_COUNT + 0;
 
 
 	/**
-	 * Returns the meta object for class '{@link petriNet.Réseau <em>Réseau</em>}'.
+	 * Returns the meta object for class '{@link petriNet.Reseau <em>Reseau</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Réseau</em>'.
-	 * @see petriNet.Réseau
+	 * @return the meta object for class '<em>Reseau</em>'.
+	 * @see petriNet.Reseau
 	 * @generated
 	 */
-	EClass getRéseau();
+	EClass getReseau();
 
 	/**
-	 * Returns the meta object for the attribute '{@link petriNet.Réseau#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link petriNet.Reseau#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see petriNet.Réseau#getName()
-	 * @see #getRéseau()
+	 * @see petriNet.Reseau#getName()
+	 * @see #getReseau()
 	 * @generated
 	 */
-	EAttribute getRéseau_Name();
+	EAttribute getReseau_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link petriNet.Réseau#getReseauElements <em>Reseau Elements</em>}'.
+	 * Returns the meta object for the containment reference list '{@link petriNet.Reseau#getReseauElements <em>Reseau Elements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Reseau Elements</em>'.
-	 * @see petriNet.Réseau#getReseauElements()
-	 * @see #getRéseau()
+	 * @see petriNet.Reseau#getReseauElements()
+	 * @see #getReseau()
 	 * @generated
 	 */
-	EReference getRéseau_ReseauElements();
+	EReference getReseau_ReseauElements();
 
 	/**
-	 * Returns the meta object for class '{@link petriNet.RéseauElement <em>Réseau Element</em>}'.
+	 * Returns the meta object for class '{@link petriNet.ReseauElement <em>Reseau Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Réseau Element</em>'.
-	 * @see petriNet.RéseauElement
+	 * @return the meta object for class '<em>Reseau Element</em>'.
+	 * @see petriNet.ReseauElement
 	 * @generated
 	 */
-	EClass getRéseauElement();
+	EClass getReseauElement();
 
 	/**
-	 * Returns the meta object for the container reference '{@link petriNet.RéseauElement#getReseau <em>Reseau</em>}'.
+	 * Returns the meta object for the container reference '{@link petriNet.ReseauElement#getReseau <em>Reseau</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the container reference '<em>Reseau</em>'.
-	 * @see petriNet.RéseauElement#getReseau()
-	 * @see #getRéseauElement()
+	 * @see petriNet.ReseauElement#getReseau()
+	 * @see #getReseauElement()
 	 * @generated
 	 */
-	EReference getRéseauElement_Reseau();
+	EReference getReseauElement_Reseau();
 
 	/**
 	 * Returns the meta object for class '{@link petriNet.Transition <em>Transition</em>}'.
@@ -578,14 +578,14 @@ public interface PetriNetPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link petriNet.impl.RéseauImpl <em>Réseau</em>}' class.
+		 * The meta object literal for the '{@link petriNet.impl.ReseauImpl <em>Reseau</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see petriNet.impl.RéseauImpl
-		 * @see petriNet.impl.PetriNetPackageImpl#getRéseau()
+		 * @see petriNet.impl.ReseauImpl
+		 * @see petriNet.impl.PetriNetPackageImpl#getReseau()
 		 * @generated
 		 */
-		EClass RÉSEAU = eINSTANCE.getRéseau();
+		EClass RESEAU = eINSTANCE.getReseau();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -593,7 +593,7 @@ public interface PetriNetPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RÉSEAU__NAME = eINSTANCE.getRéseau_Name();
+		EAttribute RESEAU__NAME = eINSTANCE.getReseau_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Reseau Elements</b></em>' containment reference list feature.
@@ -601,17 +601,17 @@ public interface PetriNetPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RÉSEAU__RESEAU_ELEMENTS = eINSTANCE.getRéseau_ReseauElements();
+		EReference RESEAU__RESEAU_ELEMENTS = eINSTANCE.getReseau_ReseauElements();
 
 		/**
-		 * The meta object literal for the '{@link petriNet.impl.RéseauElementImpl <em>Réseau Element</em>}' class.
+		 * The meta object literal for the '{@link petriNet.impl.ReseauElementImpl <em>Reseau Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see petriNet.impl.RéseauElementImpl
-		 * @see petriNet.impl.PetriNetPackageImpl#getRéseauElement()
+		 * @see petriNet.impl.ReseauElementImpl
+		 * @see petriNet.impl.PetriNetPackageImpl#getReseauElement()
 		 * @generated
 		 */
-		EClass RÉSEAU_ELEMENT = eINSTANCE.getRéseauElement();
+		EClass RESEAU_ELEMENT = eINSTANCE.getReseauElement();
 
 		/**
 		 * The meta object literal for the '<em><b>Reseau</b></em>' container reference feature.
@@ -619,7 +619,7 @@ public interface PetriNetPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RÉSEAU_ELEMENT__RESEAU = eINSTANCE.getRéseauElement_Reseau();
+		EReference RESEAU_ELEMENT__RESEAU = eINSTANCE.getReseauElement_Reseau();
 
 		/**
 		 * The meta object literal for the '{@link petriNet.impl.TransitionImpl <em>Transition</em>}' class.

@@ -56,7 +56,7 @@ public class PetriNetFactoryImpl extends EFactoryImpl implements PetriNetFactory
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case PetriNetPackage.RÉSEAU: return createRéseau();
+			case PetriNetPackage.RESEAU: return createReseau();
 			case PetriNetPackage.TRANSITION: return createTransition();
 			case PetriNetPackage.PLACE: return createPlace();
 			case PetriNetPackage.ARC: return createArc();
@@ -71,9 +71,9 @@ public class PetriNetFactoryImpl extends EFactoryImpl implements PetriNetFactory
 	 * @generated
 	 */
 	@Override
-	public Réseau createRéseau() {
-		RéseauImpl réseau = new RéseauImpl();
-		return réseau;
+	public Reseau createReseau() {
+		ReseauImpl reseau = new ReseauImpl();
+		return reseau;
 	}
 
 	/**

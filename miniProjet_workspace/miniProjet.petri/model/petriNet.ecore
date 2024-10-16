@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="petriNet" nsURI="http://www.example.org/petriNet" nsPrefix="petriNet">
-  <eClassifiers xsi:type="ecore:EClass" name="Réseau">
+  <eClassifiers xsi:type="ecore:EClass" name="Reseau">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="reseauElements" upperBound="-1"
-        eType="#//RéseauElement" containment="true" eOpposite="#//RéseauElement/reseau"/>
+        eType="#//ReseauElement" containment="true" eOpposite="#//ReseauElement/reseau"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RéseauElement" abstract="true">
+  <eClassifiers xsi:type="ecore:EClass" name="ReseauElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="reseau" lowerBound="1"
-        eType="#//Réseau" eOpposite="#//Réseau/reseauElements"/>
+        eType="#//Reseau" eOpposite="#//Reseau/reseauElements"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Transition" eSuperTypes="#//RéseauElement">
+  <eClassifiers xsi:type="ecore:EClass" name="Transition" eSuperTypes="#//ReseauElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="arcs" upperBound="-1" eType="#//Arc"
         eOpposite="#//Arc/transition"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="#//RéseauElement">
+  <eClassifiers xsi:type="ecore:EClass" name="Place" eSuperTypes="#//ReseauElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbJetons" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="arcs" upperBound="-1" eType="#//Arc"
         eOpposite="#//Arc/place"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Arc" eSuperTypes="#//RéseauElement">
+  <eClassifiers xsi:type="ecore:EClass" name="Arc" eSuperTypes="#//ReseauElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isReadArc" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>

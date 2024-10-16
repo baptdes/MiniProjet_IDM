@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="caseGuidance"/>
+		<item key="selection" value="Reseau"/>
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
-		<item key="wholeword" value="false"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="Réseau"/>
+			<item value="pertri"/>
+			<item value="per"/>
+			<item value="Workdefiniton"/>
+			<item value="public"/>
+			<item value="muPetriFactory"/>
+			<item value="myPetri"/>
+			<item value="setProcess"/>
+			<item value="workDef"/>
 			<item value="caseGuidance"/>
 			<item value="Guidance"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Reseau"/>
+			<item value="WorkDefinition"/>
+			<item value="private"/>
+			<item value="myPetriFactory"/>
+			<item value="muPetriFactory"/>
+			<item value=""/>
+			<item value="wd"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

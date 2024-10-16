@@ -1,0 +1,55 @@
+[comment encoding = UTF-8 /]
+[module toTina('http://www.example.org/petriNet')]
+
+
+[template public petriToTina(aReseau : Reseau)]
+[comment @main/]
+[file (aReseau.name, false, 'UTF-8')]
+net [aReseau.name/]
+[let p : OrderedSet(Place) = aReseau.getPlaces() ] 
+	[if (p->size() > 0)]
+		[for (place : Place | p)]
+p [place.name/] ([place.nbJetons/])
+		[/for]
+	[else]
+   <b>None.</b>
+	[/if]
+[/let]
+[let t : OrderedSet(Transition) = aReseau.getTransitions() ] 
+	[if (t->size() > 0)]
+		[for (transition : Transition | t)]
+[transition.createTransitionAndAssociatedArcs()/]
+		[/for]
+	[else]
+   <b>None.</b>
+	[/if]
+[/let]
+[/file]
+[/template]
+
+[query public getPlaces(p: Reseau) : OrderedSet(Place) = 
+	p.reseauElements->select( e | e.oclIsTypeOf(Place) )
+		->collect( e | e.oclAsType(Place) )
+		->asOrderedSet()
+/]
+
+[query public getTransitions(p: Reseau) : OrderedSet(Transition) = 
+	p.reseauElements->select( e | e.oclIsTypeOf(Transition) )
+		->collect( e | e.oclAsType(Transition) )
+		->asOrderedSet()
+/]
+
+[query public getArcs(p: Reseau) : OrderedSet(Arc) = 
+	p.reseauElements->select( e | e.oclIsTypeOf(Arc) )
+		->collect( e | e.oclAsType(Arc) )
+		->asOrderedSet()
+/]
+
+[template public createArc(arc : Arc) ]
+[if (arc.nbTransfered = 1)] [arc.place.name/][''/][else] [arc.place.name/]*[arc.nbTransfered/][''/][/if]
+[/template]
+
+[template public createTransitionAndAssociatedArcs(transition : Transition)  ]
+tr [transition.name/][for (arc : Arc | transition.arcs)]
+[if not(arc.PlaceToTransition)][arc.createArc()/][/if][/for] ->[for (arc : Arc | transition.arcs)][if (arc.PlaceToTransition)][arc.createArc()/][/if][/for]
+[/template]

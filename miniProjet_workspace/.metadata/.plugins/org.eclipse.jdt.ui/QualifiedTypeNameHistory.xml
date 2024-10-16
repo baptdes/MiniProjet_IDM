@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="simplepdl.Ressource"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.impl.ResourceSetImpl"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.XMLResource"/>
+    <fullyQualifiedTypeName name="simplepdl.WorkSequenceType"/>
     <fullyQualifiedTypeName name="simplepdl.Need"/>
+    <fullyQualifiedTypeName name="simplepdl.Ressource"/>
+    <fullyQualifiedTypeName name="petriNet.ReseauElement"/>
 </qualifiedTypeNameHistroy>

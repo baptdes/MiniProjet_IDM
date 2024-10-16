@@ -1,0 +1,10 @@
+net ProducteursConsommateurs
+p Tampon (0)
+p php (1)
+p pbp (0)
+p phc (0)
+p pbc (0)
+tr tgp php -> pbp
+tr tdp Tampon pbp -> php
+tr tgc phc -> Tampon pbc
+tr tdc pbc -> phc

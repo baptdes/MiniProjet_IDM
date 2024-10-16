@@ -36,7 +36,7 @@ import petriNet.Place;
  *
  * @generated
  */
-public class PlaceImpl extends RéseauElementImpl implements Place {
+public class PlaceImpl extends ReseauElementImpl implements Place {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

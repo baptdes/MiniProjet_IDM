@@ -35,7 +35,7 @@ import petriNet.Transition;
  *
  * @generated
  */
-public class TransitionImpl extends RéseauElementImpl implements Transition {
+public class TransitionImpl extends ReseauElementImpl implements Transition {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

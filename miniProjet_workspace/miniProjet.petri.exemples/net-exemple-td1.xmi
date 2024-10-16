@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<petriNet:Réseau
+<petriNet:Reseau
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:petriNet="http://www.example.org/petriNet"
-    name="Producteurs &amp; Consommateurs">
+    name="ProducteursConsommateurs">
   <reseauElements
       xsi:type="petriNet:Place"
       name="Tampon"
@@ -97,4 +97,4 @@
       place="//@reseauElements.2"
       transition="//@reseauElements.6"
       nbTransfered="1"/>
-</petriNet:Réseau>
+</petriNet:Reseau>

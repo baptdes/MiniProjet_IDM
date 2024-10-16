@@ -24,7 +24,7 @@ package petriNet;
  * @model
  * @generated
  */
-public interface Arc extends RéseauElement {
+public interface Arc extends ReseauElement {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

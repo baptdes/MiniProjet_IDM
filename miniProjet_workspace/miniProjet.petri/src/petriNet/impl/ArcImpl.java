@@ -33,7 +33,7 @@ import petriNet.Transition;
  *
  * @generated
  */
-public class ArcImpl extends RéseauElementImpl implements Arc {
+public class ArcImpl extends ReseauElementImpl implements Arc {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

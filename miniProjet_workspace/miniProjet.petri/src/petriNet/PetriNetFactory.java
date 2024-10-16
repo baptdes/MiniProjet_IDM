@@ -22,13 +22,13 @@ public interface PetriNetFactory extends EFactory {
 	PetriNetFactory eINSTANCE = petriNet.impl.PetriNetFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Réseau</em>'.
+	 * Returns a new object of class '<em>Reseau</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Réseau</em>'.
+	 * @return a new object of class '<em>Reseau</em>'.
 	 * @generated
 	 */
-	Réseau createRéseau();
+	Reseau createReseau();
 
 	/**
 	 * Returns a new object of class '<em>Transition</em>'.

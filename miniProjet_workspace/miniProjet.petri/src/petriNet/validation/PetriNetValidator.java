@@ -6,8 +6,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import petriNet.Arc;
 import petriNet.PetriNetPackage;
 import petriNet.Place;
-import petriNet.Réseau;
-import petriNet.RéseauElement;
+import petriNet.ReseauElement;
 import petriNet.Transition;
 import petriNet.util.PetriNetSwitch;
 
@@ -47,7 +46,7 @@ public class PetriNetValidator extends PetriNetSwitch<Boolean> {
 	 * vers les classes parentes, le cas Ã©chÃ©ant)
 	 */
 	@Override
-	public Boolean caseRéseau(petriNet.Réseau object) {
+	public Boolean caseReseau(petriNet.Reseau object) {
 		this.result.recordIfFailed(
 				!object.getReseauElements().stream()
 				.filter(p -> p.eClass().getClassifierID() == PetriNetPackage.PLACE)
@@ -56,7 +55,7 @@ public class PetriNetValidator extends PetriNetSwitch<Boolean> {
 				"Obligation d'avoir un jeton pour faire avancer le modèle");
 		
 		// Visite
-		for (RéseauElement pe : object.getReseauElements()) {
+		for (ReseauElement pe : object.getReseauElements()) {
 					this.doSwitch(pe);
 		}
 			

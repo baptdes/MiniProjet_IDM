@@ -68,12 +68,12 @@ public class PetriNetAdapterFactory extends AdapterFactoryImpl {
 	protected PetriNetSwitch<Adapter> modelSwitch =
 		new PetriNetSwitch<Adapter>() {
 			@Override
-			public Adapter caseRéseau(Réseau object) {
-				return createRéseauAdapter();
+			public Adapter caseReseau(Reseau object) {
+				return createReseauAdapter();
 			}
 			@Override
-			public Adapter caseRéseauElement(RéseauElement object) {
-				return createRéseauElementAdapter();
+			public Adapter caseReseauElement(ReseauElement object) {
+				return createReseauElementAdapter();
 			}
 			@Override
 			public Adapter caseTransition(Transition object) {
@@ -108,30 +108,30 @@ public class PetriNetAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link petriNet.Réseau <em>Réseau</em>}'.
+	 * Creates a new adapter for an object of class '{@link petriNet.Reseau <em>Reseau</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see petriNet.Réseau
+	 * @see petriNet.Reseau
 	 * @generated
 	 */
-	public Adapter createRéseauAdapter() {
+	public Adapter createReseauAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link petriNet.RéseauElement <em>Réseau Element</em>}'.
+	 * Creates a new adapter for an object of class '{@link petriNet.ReseauElement <em>Reseau Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see petriNet.RéseauElement
+	 * @see petriNet.ReseauElement
 	 * @generated
 	 */
-	public Adapter createRéseauElementAdapter() {
+	public Adapter createReseauElementAdapter() {
 		return null;
 	}
 

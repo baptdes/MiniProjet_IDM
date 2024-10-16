@@ -13,8 +13,8 @@ import petriNet.Arc;
 import petriNet.PetriNetFactory;
 import petriNet.PetriNetPackage;
 import petriNet.Place;
-import petriNet.Réseau;
-import petriNet.RéseauElement;
+import petriNet.Reseau;
+import petriNet.ReseauElement;
 import petriNet.Transition;
 
 /**
@@ -29,14 +29,14 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass réseauEClass = null;
+	private EClass reseauEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass réseauElementEClass = null;
+	private EClass reseauElementEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,8 +125,8 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * @generated
 	 */
 	@Override
-	public EClass getRéseau() {
-		return réseauEClass;
+	public EClass getReseau() {
+		return reseauEClass;
 	}
 
 	/**
@@ -135,8 +135,8 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getRéseau_Name() {
-		return (EAttribute)réseauEClass.getEStructuralFeatures().get(0);
+	public EAttribute getReseau_Name() {
+		return (EAttribute)reseauEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -145,8 +145,8 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getRéseau_ReseauElements() {
-		return (EReference)réseauEClass.getEStructuralFeatures().get(1);
+	public EReference getReseau_ReseauElements() {
+		return (EReference)reseauEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -155,8 +155,8 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * @generated
 	 */
 	@Override
-	public EClass getRéseauElement() {
-		return réseauElementEClass;
+	public EClass getReseauElement() {
+		return reseauElementEClass;
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getRéseauElement_Reseau() {
-		return (EReference)réseauElementEClass.getEStructuralFeatures().get(0);
+	public EReference getReseauElement_Reseau() {
+		return (EReference)reseauElementEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -338,12 +338,12 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		isCreated = true;
 
 		// Create classes and their features
-		réseauEClass = createEClass(RÉSEAU);
-		createEAttribute(réseauEClass, RÉSEAU__NAME);
-		createEReference(réseauEClass, RÉSEAU__RESEAU_ELEMENTS);
+		reseauEClass = createEClass(RESEAU);
+		createEAttribute(reseauEClass, RESEAU__NAME);
+		createEReference(reseauEClass, RESEAU__RESEAU_ELEMENTS);
 
-		réseauElementEClass = createEClass(RÉSEAU_ELEMENT);
-		createEReference(réseauElementEClass, RÉSEAU_ELEMENT__RESEAU);
+		reseauElementEClass = createEClass(RESEAU_ELEMENT);
+		createEReference(reseauElementEClass, RESEAU_ELEMENT__RESEAU);
 
 		transitionEClass = createEClass(TRANSITION);
 		createEAttribute(transitionEClass, TRANSITION__NAME);
@@ -391,17 +391,17 @@ public class PetriNetPackageImpl extends EPackageImpl implements PetriNetPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		transitionEClass.getESuperTypes().add(this.getRéseauElement());
-		placeEClass.getESuperTypes().add(this.getRéseauElement());
-		arcEClass.getESuperTypes().add(this.getRéseauElement());
+		transitionEClass.getESuperTypes().add(this.getReseauElement());
+		placeEClass.getESuperTypes().add(this.getReseauElement());
+		arcEClass.getESuperTypes().add(this.getReseauElement());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(réseauEClass, Réseau.class, "Réseau", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getRéseau_Name(), ecorePackage.getEString(), "name", null, 1, 1, Réseau.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRéseau_ReseauElements(), this.getRéseauElement(), this.getRéseauElement_Reseau(), "reseauElements", null, 0, -1, Réseau.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(reseauEClass, Reseau.class, "Reseau", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getReseau_Name(), ecorePackage.getEString(), "name", null, 1, 1, Reseau.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReseau_ReseauElements(), this.getReseauElement(), this.getReseauElement_Reseau(), "reseauElements", null, 0, -1, Reseau.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(réseauElementEClass, RéseauElement.class, "RéseauElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRéseauElement_Reseau(), this.getRéseau(), this.getRéseau_ReseauElements(), "reseau", null, 1, 1, RéseauElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(reseauElementEClass, ReseauElement.class, "ReseauElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getReseauElement_Reseau(), this.getReseau(), this.getReseau_ReseauElements(), "reseau", null, 1, 1, ReseauElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(transitionEClass, Transition.class, "Transition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTransition_Name(), ecorePackage.getEString(), "name", null, 0, 1, Transition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
