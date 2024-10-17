@@ -99,31 +99,31 @@ public class SimplePDL2PetriNet {
 		reseau.getReseauElements().add(a1);
 		
 		Arc a2 = myPetriFactory.createArc();
-		a1.setNbTransfered(1);
-		a1.setPlaceToTransition(false);
-		a1.setPlace(p2);
-		a1.setTransition(t1);
+		a2.setNbTransfered(1);
+		a2.setPlaceToTransition(false);
+		a2.setPlace(p2);
+		a2.setTransition(t1);
 		reseau.getReseauElements().add(a2);
 		
 		Arc a3 = myPetriFactory.createArc();
-		a1.setNbTransfered(1);
-		a1.setPlaceToTransition(false);
-		a1.setPlace(p3);
-		a1.setTransition(t1);
+		a3.setNbTransfered(1);
+		a3.setPlaceToTransition(false);
+		a3.setPlace(p3);
+		a3.setTransition(t1);
 		reseau.getReseauElements().add(a3);
 		
 		Arc a4 = myPetriFactory.createArc();
-		a1.setNbTransfered(1);
-		a1.setPlaceToTransition(true);
-		a1.setPlace(p2);
-		a1.setTransition(t2);
+		a4.setNbTransfered(1);
+		a4.setPlaceToTransition(true);
+		a4.setPlace(p2);
+		a4.setTransition(t2);
 		reseau.getReseauElements().add(a4);
 		
 		Arc a5 = myPetriFactory.createArc();
-		a1.setNbTransfered(1);
-		a1.setPlaceToTransition(false);
-		a1.setPlace(p4);
-		a1.setTransition(t2);
+		a5.setNbTransfered(1);
+		a5.setPlaceToTransition(false);
+		a5.setPlace(p4);
+		a5.setTransition(t2);
 		reseau.getReseauElements().add(a5);
 		
 		// Pour finir, sauvegarde des points de liaisons pour pouvoir relier les éléments ensuite ^^
@@ -141,18 +141,22 @@ public class SimplePDL2PetriNet {
 		arc.setName(ws.getLinkType().toString());
 		
 		switch (ws.getLinkType()) {
-        case START_TO_START:
-    		arc.setPlace(getHasStarted(predecessor));
-    		arc.setTransition(getT2Started(successor));
-        case START_TO_FINISH:
-    		arc.setPlace(getHasStarted(predecessor));
-    		arc.setTransition(getT2Finished(successor));
-        case FINISH_TO_START:
-    		arc.setPlace(getFinished(predecessor));
-    		arc.setTransition(getT2Started(successor));
-        case FINISH_TO_FINISH:
-    		arc.setPlace(getFinished(predecessor));
-    		arc.setTransition(getT2Finished(successor));
+	    case START_TO_START:
+	        arc.setPlace(getHasStarted(predecessor));
+	        arc.setTransition(getT2Started(successor));
+	        break; // Ajout du break
+	    case START_TO_FINISH:
+	        arc.setPlace(getHasStarted(predecessor));
+	        arc.setTransition(getT2Finished(successor));
+	        break; // Ajout du break
+	    case FINISH_TO_START:
+	        arc.setPlace(getFinished(predecessor));
+	        arc.setTransition(getT2Started(successor));
+	        break; // Ajout du break
+	    case FINISH_TO_FINISH:
+	        arc.setPlace(getFinished(predecessor));
+	        arc.setTransition(getT2Finished(successor));
+	        break; // Ajout du break
 		}
 		
 		reseau.getReseauElements().add(arc);
@@ -176,7 +180,7 @@ public class SimplePDL2PetriNet {
 				arc.setPlaceToTransition(true);
 				arc.setPlace(p);
 				arc.setTransition(getT2Started(n.getWorkdefinition()));
-				arc.setName("Need " + n.getQuantityNeeded() + " to start");
+				arc.setName("Need " + n.getQuantityNeeded());
 				
 				//Arc pour rendre les ressources quand l'activité finit
 				Arc arc_rend = myPetriFactory.createArc();
@@ -237,6 +241,7 @@ public class SimplePDL2PetriNet {
 		URI modelURIpetri = URI.createURI(outputModelPath);
 		Resource resourcepetri = resSetpetri.createResource(modelURIpetri);
 		reseau = myPetriFactory.createReseau();
+		reseau.setName(process.getName());
 		resourcepetri.getContents().add(reseau);
 		
 		// ------------------------------------ Convertion -----------------------------------------------------

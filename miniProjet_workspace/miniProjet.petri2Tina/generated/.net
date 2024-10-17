@@ -1,0 +1,25 @@
+net 
+pl ConceptionWaitToStart (1)
+pl ConceptionStartedButNotFinished (0)
+pl ConceptionHasStarted (0)
+pl ConceptionFinished (0)
+pl ProgrammationWaitToStart (1)
+pl ProgrammationStartedButNotFinished (0)
+pl ProgrammationHasStarted (0)
+pl ProgrammationFinished (0)
+pl RédactionTestsWaitToStart (1)
+pl RédactionTestsStartedButNotFinished (0)
+pl RédactionTestsHasStarted (0)
+pl RédactionTestsFinished (0)
+pl RédactionDocsWaitToStart (1)
+pl RédactionDocsStartedButNotFinished (0)
+pl RédactionDocsHasStarted (0)
+pl RédactionDocsFinished (0)
+tr ConceptionTransitionStart ->
+tr ConceptionTransitionFinished ConceptionFinished ->
+tr ProgrammationTransitionStart ->
+tr ProgrammationTransitionFinished ProgrammationFinished -> ConceptionFinished
+tr RédactionTestsTransitionStart ->
+tr RédactionTestsTransitionFinished RédactionTestsFinished -> ConceptionFinished ProgrammationFinished
+tr RédactionDocsTransitionStart ->
+tr RédactionDocsTransitionFinished RédactionDocsFinished -> ConceptionFinished ConceptionFinished

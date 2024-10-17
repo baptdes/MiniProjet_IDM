@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:Reseau xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petriNet="http://www.example.org/petriNet" name="Developpement">
+  <reseauElements xsi:type="petriNet:Place" name="ConceptionWaitToStart" nbJetons="1" arcs="//@reseauElements.6"/>
+  <reseauElements xsi:type="petriNet:Place" name="ConceptionStartedButNotFinished" arcs="//@reseauElements.7 //@reseauElements.9"/>
+  <reseauElements xsi:type="petriNet:Place" name="ConceptionHasStarted" arcs="//@reseauElements.8 //@reseauElements.44 //@reseauElements.47"/>
+  <reseauElements xsi:type="petriNet:Place" name="ConceptionFinished" arcs="//@reseauElements.10 //@reseauElements.46 //@reseauElements.48"/>
+  <reseauElements xsi:type="petriNet:Transition" name="ConceptionTransitionStart" arcs="//@reseauElements.6 //@reseauElements.7 //@reseauElements.8"/>
+  <reseauElements xsi:type="petriNet:Transition" name="ConceptionTransitionFinished" arcs="//@reseauElements.9 //@reseauElements.10"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.0" transition="//@reseauElements.4" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.1" transition="//@reseauElements.4" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.2" transition="//@reseauElements.4" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.1" transition="//@reseauElements.5" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.3" transition="//@reseauElements.5" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Place" name="ProgrammationWaitToStart" nbJetons="1" arcs="//@reseauElements.17"/>
+  <reseauElements xsi:type="petriNet:Place" name="ProgrammationStartedButNotFinished" arcs="//@reseauElements.18 //@reseauElements.20"/>
+  <reseauElements xsi:type="petriNet:Place" name="ProgrammationHasStarted" arcs="//@reseauElements.19"/>
+  <reseauElements xsi:type="petriNet:Place" name="ProgrammationFinished" arcs="//@reseauElements.21 //@reseauElements.45"/>
+  <reseauElements xsi:type="petriNet:Transition" name="ProgrammationTransitionStart" arcs="//@reseauElements.17 //@reseauElements.18 //@reseauElements.19 //@reseauElements.46"/>
+  <reseauElements xsi:type="petriNet:Transition" name="ProgrammationTransitionFinished" arcs="//@reseauElements.20 //@reseauElements.21"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.11" transition="//@reseauElements.15" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.12" transition="//@reseauElements.15" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.13" transition="//@reseauElements.15" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.12" transition="//@reseauElements.16" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.14" transition="//@reseauElements.16" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionTestsWaitToStart" nbJetons="1" arcs="//@reseauElements.28"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionTestsStartedButNotFinished" arcs="//@reseauElements.29 //@reseauElements.31"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionTestsHasStarted" arcs="//@reseauElements.30"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionTestsFinished" arcs="//@reseauElements.32"/>
+  <reseauElements xsi:type="petriNet:Transition" name="RedactionTestsTransitionStart" arcs="//@reseauElements.28 //@reseauElements.29 //@reseauElements.30 //@reseauElements.44"/>
+  <reseauElements xsi:type="petriNet:Transition" name="RedactionTestsTransitionFinished" arcs="//@reseauElements.31 //@reseauElements.32 //@reseauElements.45"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.22" transition="//@reseauElements.26" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.23" transition="//@reseauElements.26" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.24" transition="//@reseauElements.26" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.23" transition="//@reseauElements.27" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.25" transition="//@reseauElements.27" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionDocsWaitToStart" nbJetons="1" arcs="//@reseauElements.39"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionDocsStartedButNotFinished" arcs="//@reseauElements.40 //@reseauElements.42"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionDocsHasStarted" arcs="//@reseauElements.41"/>
+  <reseauElements xsi:type="petriNet:Place" name="RedactionDocsFinished" arcs="//@reseauElements.43"/>
+  <reseauElements xsi:type="petriNet:Transition" name="RedactionDocsTransitionStart" arcs="//@reseauElements.39 //@reseauElements.40 //@reseauElements.41 //@reseauElements.47"/>
+  <reseauElements xsi:type="petriNet:Transition" name="RedactionDocsTransitionFinished" arcs="//@reseauElements.42 //@reseauElements.43 //@reseauElements.48"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.33" transition="//@reseauElements.37" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.34" transition="//@reseauElements.37" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.35" transition="//@reseauElements.37" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" PlaceToTransition="true" place="//@reseauElements.34" transition="//@reseauElements.38" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.36" transition="//@reseauElements.38" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" name="startToStart" isReadArc="true" PlaceToTransition="true" place="//@reseauElements.2" transition="//@reseauElements.26" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" name="finishToFinish" isReadArc="true" PlaceToTransition="true" place="//@reseauElements.14" transition="//@reseauElements.27" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" name="finishToStart" isReadArc="true" PlaceToTransition="true" place="//@reseauElements.3" transition="//@reseauElements.15" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" name="startToStart" isReadArc="true" PlaceToTransition="true" place="//@reseauElements.2" transition="//@reseauElements.37" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" name="finishToFinish" isReadArc="true" PlaceToTransition="true" place="//@reseauElements.3" transition="//@reseauElements.38" nbTransfered="1"/>
+</petriNet:Reseau>

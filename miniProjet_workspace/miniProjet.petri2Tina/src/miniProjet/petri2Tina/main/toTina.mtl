@@ -4,12 +4,12 @@
 
 [template public petriToTina(aReseau : Reseau)]
 [comment @main/]
-[file (aReseau.name, false, 'UTF-8')]
+[file (aReseau.name + '.net', false, 'UTF-8')]
 net [aReseau.name/]
 [let p : OrderedSet(Place) = aReseau.getPlaces() ] 
 	[if (p->size() > 0)]
 		[for (place : Place | p)]
-p [place.name/] ([place.nbJetons/])
+pl [place.name/] ([place.nbJetons/])
 		[/for]
 	[else]
    <b>None.</b>
@@ -46,10 +46,10 @@ p [place.name/] ([place.nbJetons/])
 /]
 
 [template public createArc(arc : Arc) ]
-[if (arc.nbTransfered = 1)] [arc.place.name/][''/][else] [arc.place.name/]*[arc.nbTransfered/][''/][/if]
+ [arc.place.name/][if (arc.isReadArc)]?[else]*[/if][arc.nbTransfered/][''/]
 [/template]
 
 [template public createTransitionAndAssociatedArcs(transition : Transition)  ]
 tr [transition.name/][for (arc : Arc | transition.arcs)]
-[if not(arc.PlaceToTransition)][arc.createArc()/][/if][/for] ->[for (arc : Arc | transition.arcs)][if (arc.PlaceToTransition)][arc.createArc()/][/if][/for]
+[if (arc.PlaceToTransition)][arc.createArc()/][/if][/for] ->[for (arc : Arc | transition.arcs)][if not(arc.PlaceToTransition)][arc.createArc()/][/if][/for]
 [/template]

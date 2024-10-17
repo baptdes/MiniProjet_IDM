@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Reseau"/>
+		<item key="selection" value="setPlace"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
-		<item key="wholeword" value="true"/>
+		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="setPlace"/>
+			<item value="setPl"/>
+			<item value="modelURI"/>
+			<item value="arc_u"/>
+			<item value="arc"/>
+			<item value="afficherSortieTr"/>
+			<item value="tr"/>
+			<item value="pl"/>
+			<item value="afficherTr"/>
 			<item value="Réseau"/>
 			<item value="pertri"/>
 			<item value="per"/>
 			<item value="Workdefiniton"/>
 			<item value="public"/>
 			<item value="muPetriFactory"/>
-			<item value="myPetri"/>
-			<item value="setProcess"/>
-			<item value="workDef"/>
-			<item value="caseGuidance"/>
-			<item value="Guidance"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="arc"/>
+			<item value="p"/>
+			<item value="convertTransition"/>
 			<item value="Reseau"/>
 			<item value="WorkDefinition"/>
 			<item value="private"/>
 			<item value="myPetriFactory"/>
 			<item value="muPetriFactory"/>
-			<item value=""/>
 			<item value="wd"/>
 		</list>
 	</section>

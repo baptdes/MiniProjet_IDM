@@ -1,0 +1,25 @@
+net DeveloppementATL
+pl ConceptionWaitToStart (1)
+pl ConceptionStartedButNotFinished (0)
+pl ConceptionHasStarted (0)
+pl ConceptionFinished (0)
+pl ProgrammationWaitToStart (1)
+pl ProgrammationStartedButNotFinished (0)
+pl ProgrammationHasStarted (0)
+pl ProgrammationFinished (0)
+pl RedactionTestsWaitToStart (1)
+pl RedactionTestsStartedButNotFinished (0)
+pl RedactionTestsHasStarted (0)
+pl RedactionTestsFinished (0)
+pl RedactionDocsWaitToStart (1)
+pl RedactionDocsStartedButNotFinished (0)
+pl RedactionDocsHasStarted (0)
+pl RedactionDocsFinished (0)
+tr ConceptionTransitionStart ConceptionWaitToStart*1 -> ConceptionStartedButNotFinished*1 ConceptionHasStarted*1
+tr ConceptionTransitionFinished ConceptionStartedButNotFinished*1 -> ConceptionFinished*1
+tr ProgrammationTransitionStart ProgrammationWaitToStart*1 -> ProgrammationStartedButNotFinished*1 ProgrammationHasStarted*1
+tr ProgrammationTransitionFinished ProgrammationStartedButNotFinished*1 ConceptionHasStarted?1 -> ProgrammationFinished*1
+tr RedactionTestsTransitionStart RedactionTestsWaitToStart*1 ConceptionHasStarted?1 -> RedactionTestsStartedButNotFinished*1 RedactionTestsHasStarted*1
+tr RedactionTestsTransitionFinished RedactionTestsStartedButNotFinished*1 ProgrammationFinished?1 -> RedactionTestsFinished*1
+tr RedactionDocsTransitionStart RedactionDocsWaitToStart*1 ConceptionHasStarted?1 -> RedactionDocsStartedButNotFinished*1 RedactionDocsHasStarted*1
+tr RedactionDocsTransitionFinished RedactionDocsStartedButNotFinished*1 ConceptionFinished?1 -> RedactionDocsFinished*1

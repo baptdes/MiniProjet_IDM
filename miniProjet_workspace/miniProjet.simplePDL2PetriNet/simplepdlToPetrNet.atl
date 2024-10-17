@@ -7,7 +7,7 @@ create OUT : petriNet from IN : simplepdl;
 
 helper context simplepdl!WorkSequence
 def: getEvent() : Integer =
-    if self.linkType = #s2s or self.linkType = #f2s then
+    if self.linkType = #startToStart or self.linkType = #startToFinish then
         3
     else
         4
@@ -15,7 +15,7 @@ def: getEvent() : Integer =
 
 helper context simplepdl!WorkSequence
 def: getTarget() : Integer =
-    if self.linkType = #s2s or self.linkType = #s2f then
+    if self.linkType = #startToStart or self.linkType = #finishToStart then
         1
     else
         2
@@ -33,10 +33,11 @@ rule WorkDefinitionToPetriNet {
 	from wd : simplepdl!WorkDefinition
 	to pl1 : petriNet!Place(
 		nbJetons <- 1,
-		name <- wd.name,
+		name <- wd.name.concat('WaitToStart'),
 		reseau <- thisModule.resolveTemp(wd.process, 'reseau')
 	),
 	tr1 : petriNet!Transition(
+		name <- wd.name.concat('TransitionStart'),
 		reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
 	arc1 : petriNet!Arc(
 		nbTransfered <- 1,
@@ -45,10 +46,18 @@ rule WorkDefinitionToPetriNet {
 		PlaceToTransition <- true,
 		reseau <- thisModule.resolveTemp(wd.process, 'reseau')
 	),
-	pl2 : petriNet!Place(reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
-	pl3 : petriNet!Place(reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
-	pl4 : petriNet!Place(reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
-	tr2 : petriNet!Transition(reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
+	pl2 : petriNet!Place(
+		name <- wd.name.concat('StartedButNotFinished'),
+		reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
+	pl3 : petriNet!Place(
+		name <- wd.name.concat('HasStarted'),
+		reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
+	pl4 : petriNet!Place(
+		name <- wd.name.concat('Finished'),
+		reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
+	tr2 : petriNet!Transition(
+		name <- wd.name.concat('TransitionFinished'),
+		reseau <- thisModule.resolveTemp(wd.process, 'reseau')),
 	arc2 : petriNet!Arc(
 		nbTransfered <- 1,
 		place <- pl2,
@@ -82,12 +91,20 @@ rule WorkDefinitionToPetriNet {
 rule NeedToArc {
     from ne : simplepdl!Need
     to arc : petriNet!Arc(
+    	name <- 'Need '.concat(ne.QuantityNeeded.toString()),
         nbTransfered <- ne.quantityNeeded,
         place <- thisModule.resolveTemp(ne.ressource ,'pla'),
         transition <- thisModule.resolveTemp(ne.workdefintion ,'tr1'),
         PlaceToTransition <- true,
-        reseau <- thisModule.resolveTemp(ne.process, 'reseau') 
-    )
+        reseau <- thisModule.resolveTemp(ne.process, 'reseau')),
+	
+		arcBack : petriNet!Arc(
+    	name <- 'Give back '.concat(ne.QuantityNeeded.toString()),
+        nbTransfered <- ne.quantityNeeded,
+        place <- thisModule.resolveTemp(ne.ressource ,'pla'),
+        transition <- thisModule.resolveTemp(ne.workdefintion ,'tr2'),
+        PlaceToTransition <- false,
+        reseau <- thisModule.resolveTemp(ne.process, 'reseau') )
 }
 
 rule RessourceToPlace {
@@ -102,10 +119,11 @@ rule RessourceToPlace {
 rule WorkSequenceToArc {
     from ws : simplepdl!WorkSequence
     to arc : petriNet!Arc(
+    	name <- ws.linkType.toString(),
         nbTransfered <- 1,
         isReadArc <- true,
-        place <- thisModule.resolveTemp(ws.successor, 'pl' + ws.getEvent()),
-        transition <- thisModule.resolveTemp(ws.predecessor, 'tr' + ws.getTarget()),
+        place <- thisModule.resolveTemp(ws.predecessor, 'pl' + ws.getEvent()),
+        transition <- thisModule.resolveTemp(ws.successor, 'tr' + ws.getTarget()),
         PlaceToTransition <- true,
         reseau <- thisModule.resolveTemp(ws.process, 'reseau') 
     )

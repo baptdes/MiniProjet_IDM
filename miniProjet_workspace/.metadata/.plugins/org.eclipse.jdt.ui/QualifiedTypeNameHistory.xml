@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="simplepdl.Need"/>
     <fullyQualifiedTypeName name="simplepdl.Ressource"/>
     <fullyQualifiedTypeName name="petriNet.ReseauElement"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.EPackage"/>
+    <fullyQualifiedTypeName name="petriNet.PetriNetPackage"/>
 </qualifiedTypeNameHistroy>
