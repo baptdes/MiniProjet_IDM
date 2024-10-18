@@ -69,7 +69,7 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 	 */
 	@Override
 	public Boolean caseProcess(simplepdl.Process object) {
-		// Contraintes sur process
+		// 1 - Nom pas vide et correctement écrit
 		this.result.recordIfFailed(
 				object.getName() != null && object.getName().matches(IDENT_REGEX), 
 				object, 
@@ -102,12 +102,13 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 	 */
 	@Override
 	public Boolean caseWorkDefinition(WorkDefinition object) {
-		// Contraintes sur WD
+		// 1 - Nom pas vide et correctement écrit
 		this.result.recordIfFailed(
-				object.getName() != null || object.getName().matches(IDENT_REGEX), 
+				object.getName() != null && object.getName().matches(IDENT_REGEX), 
 				object, 
 				"Le nom de l'activité ne respecte pas les conventions Java");
 		
+		//2 - Le nom d'une activité doit être unique
 		this.result.recordIfFailed(
 				object.getProcess().getProcessElements().stream()
 					.filter(p -> p.eClass().getClassifierID() == SimplepdlPackage.WORK_DEFINITION)
@@ -146,9 +147,10 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 				object, 
 				"La quantité de la ressource (" + object.getName() + ") est négatif ou nul");
 		
-		// 4 - Les besoins ne doivent pas dépassé la quantité
+		// 4 - Les besoins en cours ne doivent pas dépassé la quantité disponible
 		this.result.recordIfFailed(
 			    object.getNeeds().stream()
+			    	.filter(n -> n.isUsed())
 			        .mapToInt(n -> n.getQuantityNeeded()).sum() <= object.getQuantity(), 
 			    object, 
 			    "Les besoins de la ressource (" + object.getName() + ") dépassent la quantité disponible"
@@ -182,7 +184,7 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 	 */
 	@Override
 	public Boolean caseWorkSequence(WorkSequence object) {
-		// Contraintes sur WS
+		// 1 - Une dépendance ne peut pas relié une activité à elle-même
 		this.result.recordIfFailed(
 				!object.getPredecessor().equals(object.getSuccessor()), 
 				object,
@@ -232,6 +234,4 @@ public class SimplePDLValidator extends SimplepdlSwitch<Boolean> {
 	public Boolean defaultCase(EObject object) {
 		return null;
 	}
-	
-	
 }

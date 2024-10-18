@@ -1,0 +1,15 @@
+[] <> ConceptionFinished;
+[] ( ConceptionFinished => -(ConceptionWaitToStart \/ ConceptionStartedButNotFinished));
+[] <> ((ConceptionWaitToStart  /\ -(ConceptionFinished \/ ConceptionStartedButNotFinished)) \/ ( ConceptionFinished /\ -(ConceptionWaitToStart \/ ConceptionStartedButNotFinished)) \/ (ConceptionStartedButNotFinished /\ -(ConceptionWaitToStart \/ ConceptionFinished)));
+
+[] <> ProgrammationFinished;
+[] ( ProgrammationFinished => -(ProgrammationWaitToStart \/ ProgrammationStartedButNotFinished));
+[] <> ((ProgrammationWaitToStart  /\ -(ProgrammationFinished \/ ProgrammationStartedButNotFinished)) \/ ( ProgrammationFinished /\ -(ProgrammationWaitToStart \/ ProgrammationStartedButNotFinished)) \/ (ProgrammationStartedButNotFinished /\ -(ProgrammationWaitToStart \/ ProgrammationFinished)));
+
+[] <> RedactionTestsFinished;
+[] ( RedactionTestsFinished => -(RedactionTestsWaitToStart \/ RedactionTestsStartedButNotFinished));
+[] <> ((RedactionTestsWaitToStart  /\ -(RedactionTestsFinished \/ RedactionTestsStartedButNotFinished)) \/ ( RedactionTestsFinished /\ -(RedactionTestsWaitToStart \/ RedactionTestsStartedButNotFinished)) \/ (RedactionTestsStartedButNotFinished /\ -(RedactionTestsWaitToStart \/ RedactionTestsFinished)));
+
+[] <> RedactionDocsFinished;
+[] ( RedactionDocsFinished => -(RedactionDocsWaitToStart \/ RedactionDocsStartedButNotFinished));
+[] <> ((RedactionDocsWaitToStart  /\ -(RedactionDocsFinished \/ RedactionDocsStartedButNotFinished)) \/ ( RedactionDocsFinished /\ -(RedactionDocsWaitToStart \/ RedactionDocsStartedButNotFinished)) \/ (RedactionDocsStartedButNotFinished /\ -(RedactionDocsWaitToStart \/ RedactionDocsFinished)));

@@ -4,28 +4,27 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:simplepdl="http://simplepdl"
-    name="création_logiciel">
+    name="Développement">
   <processElements
       xsi:type="simplepdl:WorkDefinition"
-      linksToSuccessors="//@processElements.11"
-      linksToPredecessors="//@processElements.4 //@processElements.6 //@processElements.7 //@processElements.8 //@processElements.9"
+      linksToPredecessors="//@processElements.4 //@processElements.6 //@processElements.7 //@processElements.8"
       name="Conception"/>
   <processElements
       xsi:type="simplepdl:WorkDefinition"
-      linksToSuccessors="//@processElements.6 //@processElements.10"
-      linksToPredecessors="//@processElements.5 //@processElements.11"
+      linksToSuccessors="//@processElements.6"
+      linksToPredecessors="//@processElements.5"
       name="Programmation"
-      needs="//@processElements.13"/>
+      needs="//@processElements.10"/>
   <processElements
       xsi:type="simplepdl:WorkDefinition"
-      linksToSuccessors="//@processElements.4 //@processElements.5 //@processElements.9"
-      linksToPredecessors="//@processElements.10"
-      name="RédactionTests"
-      needs="//@processElements.14"/>
+      linksToSuccessors="//@processElements.4 //@processElements.5"
+      name="RedactionTests"
+      needs="//@processElements.11"/>
   <processElements
       xsi:type="simplepdl:WorkDefinition"
       linksToSuccessors="//@processElements.7 //@processElements.8"
-      name="RédactionDocs"/>
+      name="RédactionDocs"
+      needs="//@processElements.12"/>
   <processElements
       xsi:type="simplepdl:WorkSequence"
       predecessor="//@processElements.0"
@@ -50,30 +49,25 @@
       predecessor="//@processElements.0"
       successor="//@processElements.3"/>
   <processElements
-      xsi:type="simplepdl:WorkSequence"
-      predecessor="//@processElements.0"
-      successor="//@processElements.2"/>
-  <processElements
-      xsi:type="simplepdl:WorkSequence"
-      predecessor="//@processElements.2"
-      successor="//@processElements.1"/>
-  <processElements
-      xsi:type="simplepdl:WorkSequence"
-      predecessor="//@processElements.1"
-      successor="//@processElements.0"/>
-  <processElements
       xsi:type="simplepdl:Ressource"
-      needs="//@processElements.13 //@processElements.14"
-      quantity="3"
+      needs="//@processElements.10 //@processElements.11 //@processElements.12"
+      quantity="5"
       name="Computer"/>
   <processElements
       xsi:type="simplepdl:Need"
       workdefinition="//@processElements.1"
-      ressource="//@processElements.12"
-      quantityNeeded="2"/>
+      ressource="//@processElements.9"
+      quantityNeeded="3"
+      used="true"/>
   <processElements
       xsi:type="simplepdl:Need"
       workdefinition="//@processElements.2"
-      ressource="//@processElements.12"
-      quantityNeeded="1"/>
+      ressource="//@processElements.9"
+      quantityNeeded="2"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.3"
+      ressource="//@processElements.9"
+      quantityNeeded="4"
+      used="true"/>
 </simplepdl:Process>
