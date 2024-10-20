@@ -1,0 +1,20 @@
+net ex1
+pl course_ready (1)
+pl course_running (0)
+pl course_started (0)
+pl course_finished (0)
+pl gosse_ready (1)
+pl gosse_running (0)
+pl gosse_started (0)
+pl gosse_finished (0)
+pl travail_ready (1)
+pl travail_running (0)
+pl travail_started (0)
+pl travail_finished (0)
+pl cadi (5)
+tr course_start course_ready*1 cadi*1 -> course_running*1 course_started*1
+tr course_finish course_running*1 -> course_finished*1 cadi*1
+tr gosse_start gosse_ready*1 -> gosse_running*1 gosse_started*1
+tr gosse_finish gosse_running*1 course_finished?1 -> gosse_finished*1
+tr travail_start travail_ready*1 -> travail_running*1 travail_started*1
+tr travail_finish travail_running*1 gosse_finished?1 -> travail_finished*1

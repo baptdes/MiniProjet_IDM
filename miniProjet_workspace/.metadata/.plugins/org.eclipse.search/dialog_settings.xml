@@ -91,7 +91,4 @@
 			<item value="processElements"/>
 		</list>
 	</section>
-	<section name="">
-		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
-	</section>
 </section>

@@ -70,24 +70,24 @@ public class SimplePDL2PetriNet {
 		// Les places de la WD
 		Place p1 = myPetriFactory.createPlace();
 		p1.setNbJetons(1);
-		p1.setName(wd.getName()+"WaitToStart");
+		p1.setName(wd.getName()+"_ready");
 		reseau.getReseauElements().add(p1);
 		Place p2 = myPetriFactory.createPlace();
-		p2.setName(wd.getName()+"StartedButNotFinished");
+		p2.setName(wd.getName()+"_running");
 		reseau.getReseauElements().add(p2);
 		Place p3 = myPetriFactory.createPlace();
-		p3.setName(wd.getName()+"HasStarted");
+		p3.setName(wd.getName()+"_started");
 		reseau.getReseauElements().add(p3);
 		Place p4 = myPetriFactory.createPlace();
-		p4.setName(wd.getName()+"Finished");
+		p4.setName(wd.getName()+"_finished");
 		reseau.getReseauElements().add(p4);
 		
 		// Les transitions
 		Transition t1 = myPetriFactory.createTransition();
-		t1.setName(wd.getName()+"TransitionStart");
+		t1.setName(wd.getName()+"_start");
 		reseau.getReseauElements().add(t1);
 		Transition t2 = myPetriFactory.createTransition();
-		t2.setName(wd.getName()+"TransitionFinished");
+		t2.setName(wd.getName()+"_finish");
 		reseau.getReseauElements().add(t2);
 		
 		// Maintenant, on relie tout :)
@@ -181,6 +181,7 @@ public class SimplePDL2PetriNet {
 				arc.setPlace(p);
 				arc.setTransition(getT2Started(n.getWorkdefinition()));
 				arc.setName("Need " + n.getQuantityNeeded());
+				reseau.getReseauElements().add(arc);
 				
 				//Arc pour rendre les ressources quand l'activité finit
 				Arc arc_rend = myPetriFactory.createArc();
@@ -189,6 +190,8 @@ public class SimplePDL2PetriNet {
 				arc_rend.setPlace(p);
 				arc_rend.setTransition(getT2Finished(n.getWorkdefinition()));
 				arc_rend.setName("Give back " + n.getQuantityNeeded());
+				reseau.getReseauElements().add(arc_rend);
+				
 	        });
 	}
 

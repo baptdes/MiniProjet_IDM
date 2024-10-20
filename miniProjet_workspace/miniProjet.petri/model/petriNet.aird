@@ -5,7 +5,7 @@
     <semanticResources>petriNet.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_VbokAIidEe-toflhjSTJyQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Hq1KYI0uEe-cndwyhWNmgg" name="petriNet class diagram" repPath="#_HqvDwI0uEe-cndwyhWNmgg" changeId="e20edb71-94b0-4bfa-a066-d861d85befbd">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Hq1KYI0uEe-cndwyhWNmgg" name="petriNet class diagram" repPath="#_HqvDwI0uEe-cndwyhWNmgg" changeId="250fe7ff-e1cf-4681-a69e-f8d3aaad1894">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="petriNet.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -86,9 +86,9 @@
               <styles xmi:type="notation:FontStyle" xmi:id="_IaNY4Y0uEe-cndwyhWNmgg" fontName="Ubuntu Sans" fontHeight="8" bold="true"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_IaNY4o0uEe-cndwyhWNmgg"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_IaN_8I0uEe-cndwyhWNmgg" type="3010" element="_IZ2MgI0uEe-cndwyhWNmgg">
-              <styles xmi:type="notation:FontStyle" xmi:id="_IaN_8Y0uEe-cndwyhWNmgg" fontName="Ubuntu Sans" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_IaN_8o0uEe-cndwyhWNmgg"/>
+            <children xmi:type="notation:Node" xmi:id="_ZLP6EI1jEe-tFowqgjAwXw" type="3010" element="_ZK2RcY1jEe-tFowqgjAwXw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ZLP6EY1jEe-tFowqgjAwXw" fontName="Ubuntu Sans" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ZLP6Eo1jEe-tFowqgjAwXw"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_IaOnAI0uEe-cndwyhWNmgg" type="3010" element="_IZ2zkY0uEe-cndwyhWNmgg">
               <styles xmi:type="notation:FontStyle" xmi:id="_IaOnAY0uEe-cndwyhWNmgg" fontName="Ubuntu Sans" fontHeight="8" bold="true"/>
@@ -321,10 +321,10 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_IZ2MgI0uEe-cndwyhWNmgg" name="PlaceToTransition : EBoolean = false" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/PlaceToTransition"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/PlaceToTransition"/>
-        <ownedStyle xmi:type="diagram:BundledImage" uid="_IZ2zkI0uEe-cndwyhWNmgg" labelAlignment="LEFT" description="_IZve0I0uEe-cndwyhWNmgg">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZK2RcY1jEe-tFowqgjAwXw" name="placeToTransition : EBoolean = false" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/placeToTransition"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="petriNet.ecore#//Arc/placeToTransition"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_ZK4GoI1jEe-tFowqgjAwXw" labelAlignment="LEFT" description="_IZve0I0uEe-cndwyhWNmgg">
           <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>

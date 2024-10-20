@@ -1,0 +1,25 @@
+net Developpement
+pl Conception_ready (1)
+pl Conception_running (0)
+pl Conception_started (0)
+pl Conception_finished (0)
+pl Programmation_ready (1)
+pl Programmation_running (0)
+pl Programmation_started (0)
+pl Programmation_finished (0)
+pl RedactionTests_ready (1)
+pl RedactionTests_running (0)
+pl RedactionTests_started (0)
+pl RedactionTests_finished (0)
+pl RedactionDocs_ready (1)
+pl RedactionDocs_running (0)
+pl RedactionDocs_started (0)
+pl RedactionDocs_finished (0)
+tr Conception_start Conception_ready*1 -> Conception_running*1 Conception_started*1
+tr Conception_finish Conception_running*1 -> Conception_finished*1
+tr Programmation_start Programmation_ready*1 Conception_finished?1 -> Programmation_running*1 Programmation_started*1
+tr Programmation_finish Programmation_running*1 -> Programmation_finished*1
+tr RedactionTests_start RedactionTests_ready*1 Conception_started?1 -> RedactionTests_running*1 RedactionTests_started*1
+tr RedactionTests_finish RedactionTests_running*1 Programmation_finished?1 -> RedactionTests_finished*1
+tr RedactionDocs_start RedactionDocs_ready*1 Conception_started?1 -> RedactionDocs_running*1 RedactionDocs_started*1
+tr RedactionDocs_finish RedactionDocs_running*1 Conception_finished?1 -> RedactionDocs_finished*1

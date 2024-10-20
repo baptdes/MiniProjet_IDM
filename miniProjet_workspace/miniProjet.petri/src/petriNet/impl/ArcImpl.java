@@ -529,7 +529,7 @@ public class ArcImpl extends ReseauElementImpl implements Arc {
 		result.append(name);
 		result.append(", isReadArc: ");
 		result.append(isReadArc);
-		result.append(", PlaceToTransition: ");
+		result.append(", placeToTransition: ");
 		result.append(placeToTransition);
 		result.append(", nbTransfered: ");
 		result.append(nbTransfered);

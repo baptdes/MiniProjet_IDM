@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    name="Worst SimplePDL Ever Made !">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.5"
+      linksToPredecessors="//@processElements.4 //@processElements.8 //@processElements.9 //@processElements.10 //@processElements.6 //@processElements.5"
+      name="NomPasTresUnique"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.8"
+      linksToPredecessors="//@processElements.7"
+      name="Programmation"
+      needs="//@processElements.13"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.4 //@processElements.7 //@processElements.6"
+      name="RedactionTests"
+      needs="//@processElements.14"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.9 //@processElements.10"
+      name="PourquoiPasMettreUn é ?"
+      needs="//@processElements.15 //@processElements.16"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.0"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.1"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.0"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.13 //@processElements.14 //@processElements.15 //@processElements.16"
+      quantity="5"
+      name="DoubleExpresso"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      name="DoubleExpresso"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.1"
+      ressource="//@processElements.11"
+      quantityNeeded="3"
+      used="true"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.2"
+      ressource="//@processElements.11"
+      quantityNeeded="-6"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.3"
+      ressource="//@processElements.11"
+      quantityNeeded="4"
+      used="true"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.3"
+      ressource="//@processElements.11"
+      quantityNeeded="4"
+      used="true"/>
+  <processElements
+      xsi:type="simplepdl:Guidance"
+      text=""/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      quantity="-5"
+      name="Eléphant"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      name="NomPasTresUnique"/>
+</simplepdl:Process>

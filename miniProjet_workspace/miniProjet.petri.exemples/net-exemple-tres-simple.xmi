@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:Reseau
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://www.example.org/petriNet"
+    name="Singe">
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="StockDeBananes"
+      nbJetons="1"
+      arcs="//@reseauElements.1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      name=""
+      placeToTransition="true"
+      place="//@reseauElements.0"
+      transition="//@reseauElements.2"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Transition"
+      name="MangerBanane"
+      arcs="//@reseauElements.1 //@reseauElements.3"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      place="//@reseauElements.4"
+      transition="//@reseauElements.2"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="PeauxDeBananes"
+      arcs="//@reseauElements.3"/>
+</petriNet:Reseau>

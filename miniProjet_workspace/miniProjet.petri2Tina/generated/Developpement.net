@@ -1,25 +1,30 @@
 net Developpement
-pl ConceptionWaitToStart (1)
-pl ConceptionStartedButNotFinished (0)
-pl ConceptionHasStarted (0)
-pl ConceptionFinished (0)
-pl ProgrammationWaitToStart (1)
-pl ProgrammationStartedButNotFinished (0)
-pl ProgrammationHasStarted (0)
-pl ProgrammationFinished (0)
-pl RedactionTestsWaitToStart (1)
-pl RedactionTestsStartedButNotFinished (0)
-pl RedactionTestsHasStarted (0)
-pl RedactionTestsFinished (0)
-pl RedactionDocsWaitToStart (1)
-pl RedactionDocsStartedButNotFinished (0)
-pl RedactionDocsHasStarted (0)
-pl RedactionDocsFinished (0)
-tr ConceptionTransitionStart ConceptionWaitToStart*1 -> ConceptionStartedButNotFinished*1 ConceptionHasStarted*1
-tr ConceptionTransitionFinished ConceptionStartedButNotFinished*1 -> ConceptionFinished*1
-tr ProgrammationTransitionStart ProgrammationWaitToStart*1 ConceptionFinished?1 -> ProgrammationStartedButNotFinished*1 ProgrammationHasStarted*1
-tr ProgrammationTransitionFinished ProgrammationStartedButNotFinished*1 -> ProgrammationFinished*1
-tr RedactionTestsTransitionStart RedactionTestsWaitToStart*1 ConceptionHasStarted?1 -> RedactionTestsStartedButNotFinished*1 RedactionTestsHasStarted*1
-tr RedactionTestsTransitionFinished RedactionTestsStartedButNotFinished*1 ProgrammationFinished?1 -> RedactionTestsFinished*1
-tr RedactionDocsTransitionStart RedactionDocsWaitToStart*1 ConceptionHasStarted?1 -> RedactionDocsStartedButNotFinished*1 RedactionDocsHasStarted*1
-tr RedactionDocsTransitionFinished RedactionDocsStartedButNotFinished*1 ConceptionFinished?1 -> RedactionDocsFinished*1
+pl Conception_ready (1)
+pl Conception_running (0)
+pl Conception_started (0)
+pl Conception_finished (0)
+pl Programmation_ready (1)
+pl Programmation_running (0)
+pl Programmation_started (0)
+pl Programmation_finished (0)
+pl RedactionTests_ready (1)
+pl RedactionTests_running (0)
+pl RedactionTests_started (0)
+pl RedactionTests_finished (0)
+pl RedactionDocs_ready (1)
+pl RedactionDocs_running (0)
+pl RedactionDocs_started (0)
+pl RedactionDocs_finished (0)
+pl Concepteur (3)
+pl Developpeur (2)
+pl Machine (4)
+pl Redacteur (1)
+pl Testeur (2)
+tr Conception_start Conception_ready*1 Concepteur*2 Machine*2 -> Conception_running*1 Conception_started*1
+tr Conception_finish Conception_running*1 -> Conception_finished*1 Concepteur*2 Machine*2
+tr Programmation_start Programmation_ready*1 Developpeur*2 Machine*3 Conception_finished?1 -> Programmation_running*1 Programmation_started*1
+tr Programmation_finish Programmation_running*1 -> Programmation_finished*1 Developpeur*2 Machine*3
+tr RedactionTests_start RedactionTests_ready*1 Machine*2 Testeur*1 Conception_started?1 -> RedactionTests_running*1 RedactionTests_started*1
+tr RedactionTests_finish RedactionTests_running*1 Programmation_finished?1 -> RedactionTests_finished*1 Machine*2 Testeur*1
+tr RedactionDocs_start RedactionDocs_ready*1 Machine*1 Redacteur*1 Conception_started?1 -> RedactionDocs_running*1 RedactionDocs_started*1
+tr RedactionDocs_finish RedactionDocs_running*1 Conception_finished?1 -> RedactionDocs_finished*1 Machine*1 Redacteur*1

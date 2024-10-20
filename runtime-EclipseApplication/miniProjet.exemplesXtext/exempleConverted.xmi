@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pDLXText:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pDLXText="http://www.PDLXText.miniProjet" name="ex1">
+  <processElements xsi:type="pDLXText:WorkDefinition" name="course"/>
+  <processElements xsi:type="pDLXText:WorkDefinition" name="gosse"/>
+  <processElements xsi:type="pDLXText:WorkDefinition" name="travail"/>
+  <processElements xsi:type="pDLXText:WorkSequence" predecessor="//@processElements.0" successor="//@processElements.1"/>
+  <processElements xsi:type="pDLXText:WorkSequence" linkType="f2f" predecessor="//@processElements.1" successor="//@processElements.2"/>
+  <processElements xsi:type="pDLXText:Guidance" texte="a est plus important que b" elements="//@processElements.0 //@processElements.1"/>
+  <processElements xsi:type="pDLXText:Ressource" name="cadi" quantity="5"/>
+  <processElements xsi:type="pDLXText:Need" workdefinition="//@processElements.0" quantityNeeded="1" ressource="//@processElements.6"/>
+</pDLXText:Process>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<simplepdl:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplepdl="http://simplepdl" name="ex1">
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToPredecessors="//@processElements.3" name="course" needs="//@processElements.7"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.3" linksToPredecessors="//@processElements.4" name="gosse"/>
+  <processElements xsi:type="simplepdl:WorkDefinition" linksToSuccessors="//@processElements.4" name="travail"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.0" successor="//@processElements.1"/>
+  <processElements xsi:type="simplepdl:WorkSequence" linkType="finishToFinish" predecessor="//@processElements.1" successor="//@processElements.2"/>
+  <processElements xsi:type="simplepdl:Guidance" text="a est plus important que b" elements="//@processElements.0 //@processElements.1"/>
+  <processElements xsi:type="simplepdl:Ressource" needs="//@processElements.7" quantity="5" name="cadi"/>
+  <processElements xsi:type="simplepdl:Need" workdefinition="//@processElements.0" ressource="//@processElements.6" quantityNeeded="1"/>
+</simplepdl:Process>

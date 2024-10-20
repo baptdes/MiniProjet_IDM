@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:Reseau
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="http://www.example.org/petriNet"
+    name="ProducteursConsommateurs">
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="Tampon"
+      arcs="//@reseauElements.9 //@reseauElements.10"/>
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="Php"
+      arcs="//@reseauElements.15 //@reseauElements.16"/>
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="Pbp"
+      arcs="//@reseauElements.17 //@reseauElements.18"/>
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="Phc"
+      arcs="//@reseauElements.11 //@reseauElements.12"/>
+  <reseauElements
+      xsi:type="petriNet:Place"
+      name="Pbc"
+      arcs="//@reseauElements.13 //@reseauElements.14"/>
+  <reseauElements
+      xsi:type="petriNet:Transition"
+      name="Tgp"
+      arcs="//@reseauElements.16 //@reseauElements.17"/>
+  <reseauElements
+      xsi:type="petriNet:Transition"
+      name="Tdp"
+      arcs="//@reseauElements.9 //@reseauElements.15 //@reseauElements.18"/>
+  <reseauElements
+      xsi:type="petriNet:Transition"
+      name="Tgc"
+      arcs="//@reseauElements.10 //@reseauElements.11 //@reseauElements.14"/>
+  <reseauElements
+      xsi:type="petriNet:Transition"
+      name="Tdc"
+      arcs="//@reseauElements.13 //@reseauElements.12"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      place="//@reseauElements.0"
+      transition="//@reseauElements.6"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      placeToTransition="true"
+      place="//@reseauElements.0"
+      transition="//@reseauElements.7"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      place="//@reseauElements.3"
+      transition="//@reseauElements.7"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      placeToTransition="true"
+      place="//@reseauElements.3"
+      transition="//@reseauElements.8"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      place="//@reseauElements.4"
+      transition="//@reseauElements.8"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      placeToTransition="true"
+      place="//@reseauElements.4"
+      transition="//@reseauElements.7"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      placeToTransition="true"
+      place="//@reseauElements.1"
+      transition="//@reseauElements.6"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      place="//@reseauElements.1"
+      transition="//@reseauElements.5"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      placeToTransition="true"
+      place="//@reseauElements.2"
+      transition="//@reseauElements.5"
+      nbTransfered="1"/>
+  <reseauElements
+      xsi:type="petriNet:Arc"
+      place="//@reseauElements.2"
+      transition="//@reseauElements.6"
+      nbTransfered="1"/>
+</petriNet:Reseau>

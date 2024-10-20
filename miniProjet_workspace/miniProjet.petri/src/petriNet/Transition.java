@@ -29,7 +29,7 @@ public interface Transition extends ReseauElement {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see petriNet.PetriNetPackage#getTransition_Name()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();
