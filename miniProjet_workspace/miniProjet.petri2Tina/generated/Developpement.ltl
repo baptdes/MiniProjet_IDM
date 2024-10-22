@@ -1,15 +1,15 @@
-[] <> ConceptionFinished;
-[] ( ConceptionFinished => -(ConceptionWaitToStart \/ ConceptionStartedButNotFinished));
-[] <> ((ConceptionWaitToStart  /\ -(ConceptionFinished \/ ConceptionStartedButNotFinished)) \/ ( ConceptionFinished /\ -(ConceptionWaitToStart \/ ConceptionStartedButNotFinished)) \/ (ConceptionStartedButNotFinished /\ -(ConceptionWaitToStart \/ ConceptionFinished)));
+[] <> Conception_finished;
+[] ( Conception_finished => -(Conception_ready \/ Conception_running));
+[] <> ((Conception_ready  /\ -(Conception_finished \/ Conception_running)) \/ ( Conception_finished /\ -(Conception_ready \/ Conception_running)) \/ (Conception_running /\ -(Conception_ready \/ Conception_finished)));
 
-[] <> ProgrammationFinished;
-[] ( ProgrammationFinished => -(ProgrammationWaitToStart \/ ProgrammationStartedButNotFinished));
-[] <> ((ProgrammationWaitToStart  /\ -(ProgrammationFinished \/ ProgrammationStartedButNotFinished)) \/ ( ProgrammationFinished /\ -(ProgrammationWaitToStart \/ ProgrammationStartedButNotFinished)) \/ (ProgrammationStartedButNotFinished /\ -(ProgrammationWaitToStart \/ ProgrammationFinished)));
+[] <> Programmation_finished;
+[] ( Programmation_finished => -(Programmation_ready \/ Programmation_running));
+[] <> ((Programmation_ready  /\ -(Programmation_finished \/ Programmation_running)) \/ ( Programmation_finished /\ -(Programmation_ready \/ Programmation_running)) \/ (Programmation_running /\ -(Programmation_ready \/ Programmation_finished)));
 
-[] <> RedactionTestsFinished;
-[] ( RedactionTestsFinished => -(RedactionTestsWaitToStart \/ RedactionTestsStartedButNotFinished));
-[] <> ((RedactionTestsWaitToStart  /\ -(RedactionTestsFinished \/ RedactionTestsStartedButNotFinished)) \/ ( RedactionTestsFinished /\ -(RedactionTestsWaitToStart \/ RedactionTestsStartedButNotFinished)) \/ (RedactionTestsStartedButNotFinished /\ -(RedactionTestsWaitToStart \/ RedactionTestsFinished)));
+[] <> RedactionTests_finished;
+[] ( RedactionTests_finished => -(RedactionTests_ready \/ RedactionTests_running));
+[] <> ((RedactionTests_ready  /\ -(RedactionTests_finished \/ RedactionTests_running)) \/ ( RedactionTests_finished /\ -(RedactionTests_ready \/ RedactionTests_running)) \/ (RedactionTests_running /\ -(RedactionTests_ready \/ RedactionTests_finished)));
 
-[] <> RedactionDocsFinished;
-[] ( RedactionDocsFinished => -(RedactionDocsWaitToStart \/ RedactionDocsStartedButNotFinished));
-[] <> ((RedactionDocsWaitToStart  /\ -(RedactionDocsFinished \/ RedactionDocsStartedButNotFinished)) \/ ( RedactionDocsFinished /\ -(RedactionDocsWaitToStart \/ RedactionDocsStartedButNotFinished)) \/ (RedactionDocsStartedButNotFinished /\ -(RedactionDocsWaitToStart \/ RedactionDocsFinished)));
+[] <> RedactionDocs_finished;
+[] ( RedactionDocs_finished => -(RedactionDocs_ready \/ RedactionDocs_running));
+[] <> ((RedactionDocs_ready  /\ -(RedactionDocs_finished \/ RedactionDocs_running)) \/ ( RedactionDocs_finished /\ -(RedactionDocs_ready \/ RedactionDocs_running)) \/ (RedactionDocs_running /\ -(RedactionDocs_ready \/ RedactionDocs_finished)));

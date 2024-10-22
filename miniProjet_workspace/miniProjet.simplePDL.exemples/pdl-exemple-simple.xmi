@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    name="ExempleSimple">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.2"
+      name="AchatRaquette"
+      needs="//@processElements.4"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.2"
+      name="JouerTennis"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.4"
+      quantity="200"
+      name="Argent"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.0"
+      ressource="//@processElements.3"
+      quantityNeeded="150"/>
+</simplepdl:Process>

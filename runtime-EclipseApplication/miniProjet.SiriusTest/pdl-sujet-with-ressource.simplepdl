@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    name="Developpement">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.4 //@processElements.6 //@processElements.7 //@processElements.8"
+      name="Conception"
+      needs="//@processElements.14 //@processElements.16"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.6"
+      linksToPredecessors="//@processElements.5"
+      name="Programmation"
+      needs="//@processElements.15 //@processElements.18"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.4 //@processElements.5"
+      name="RedactionTests"
+      needs="//@processElements.19 //@processElements.21"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.7 //@processElements.8"
+      name="RedactionDocs"
+      needs="//@processElements.17 //@processElements.20"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.1"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.0"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.14"
+      quantity="3"
+      name="Concepteur"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.15"
+      quantity="2"
+      name="Developpeur"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.16 //@processElements.17 //@processElements.18 //@processElements.19"
+      quantity="4"
+      name="Machine"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.20"
+      quantity="1"
+      name="Redacteur"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      needs="//@processElements.21"
+      quantity="2"
+      name="Testeur"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.0"
+      ressource="//@processElements.9"
+      quantityNeeded="2"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.1"
+      ressource="//@processElements.10"
+      quantityNeeded="2"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.0"
+      ressource="//@processElements.11"
+      quantityNeeded="2"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.3"
+      ressource="//@processElements.11"
+      quantityNeeded="1"
+      used="true"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.1"
+      ressource="//@processElements.11"
+      quantityNeeded="3"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.2"
+      ressource="//@processElements.11"
+      quantityNeeded="2"
+      used="true"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.3"
+      ressource="//@processElements.12"
+      quantityNeeded="1"/>
+  <processElements
+      xsi:type="simplepdl:Need"
+      workdefinition="//@processElements.2"
+      ressource="//@processElements.13"
+      quantityNeeded="1"/>
+</simplepdl:Process>

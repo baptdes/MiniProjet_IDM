@@ -1,0 +1,14 @@
+net ExempleSimple
+pl AchatRaquette_ready (1)
+pl AchatRaquette_running (0)
+pl AchatRaquette_started (0)
+pl AchatRaquette_finished (0)
+pl JouerTennis_ready (1)
+pl JouerTennis_running (0)
+pl JouerTennis_started (0)
+pl JouerTennis_finished (0)
+pl Argent (200)
+tr AchatRaquette_start AchatRaquette_ready*1 Argent*150 -> AchatRaquette_running*1 AchatRaquette_started*1
+tr AchatRaquette_finish AchatRaquette_running*1 -> AchatRaquette_finished*1 Argent*150
+tr JouerTennis_start JouerTennis_ready*1 AchatRaquette_finished?1 -> JouerTennis_running*1 JouerTennis_started*1
+tr JouerTennis_finish JouerTennis_running*1 -> JouerTennis_finished*1

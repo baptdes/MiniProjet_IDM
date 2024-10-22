@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petriNet:Reseau xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petriNet="http://www.example.org/petriNet" name="ExempleSimple">
+  <reseauElements xsi:type="petriNet:Place" name="AchatRaquette_ready" nbJetons="1" arcs="//@reseauElements.2"/>
+  <reseauElements xsi:type="petriNet:Transition" name="AchatRaquette_start" arcs="//@reseauElements.2 //@reseauElements.7 //@reseauElements.8 //@reseauElements.22"/>
+  <reseauElements xsi:type="petriNet:Arc" placeToTransition="true" place="//@reseauElements.0" transition="//@reseauElements.1" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Place" name="AchatRaquette_running" arcs="//@reseauElements.7 //@reseauElements.9"/>
+  <reseauElements xsi:type="petriNet:Place" name="AchatRaquette_started" arcs="//@reseauElements.8"/>
+  <reseauElements xsi:type="petriNet:Place" name="AchatRaquette_finished" arcs="//@reseauElements.10 //@reseauElements.25"/>
+  <reseauElements xsi:type="petriNet:Transition" name="AchatRaquette_finish" arcs="//@reseauElements.9 //@reseauElements.10 //@reseauElements.23"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.3" transition="//@reseauElements.1" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.4" transition="//@reseauElements.1" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" placeToTransition="true" place="//@reseauElements.3" transition="//@reseauElements.6" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.5" transition="//@reseauElements.6" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Place" name="JouerTennis_ready" nbJetons="1" arcs="//@reseauElements.13"/>
+  <reseauElements xsi:type="petriNet:Transition" name="JouerTennis_start" arcs="//@reseauElements.13 //@reseauElements.18 //@reseauElements.19 //@reseauElements.25"/>
+  <reseauElements xsi:type="petriNet:Arc" placeToTransition="true" place="//@reseauElements.11" transition="//@reseauElements.12" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Place" name="JouerTennis_running" arcs="//@reseauElements.18 //@reseauElements.20"/>
+  <reseauElements xsi:type="petriNet:Place" name="JouerTennis_started" arcs="//@reseauElements.19"/>
+  <reseauElements xsi:type="petriNet:Place" name="JouerTennis_finished" arcs="//@reseauElements.21"/>
+  <reseauElements xsi:type="petriNet:Transition" name="JouerTennis_finish" arcs="//@reseauElements.20 //@reseauElements.21"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.14" transition="//@reseauElements.12" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.15" transition="//@reseauElements.12" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" placeToTransition="true" place="//@reseauElements.14" transition="//@reseauElements.17" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" place="//@reseauElements.16" transition="//@reseauElements.17" nbTransfered="1"/>
+  <reseauElements xsi:type="petriNet:Arc" name="Need 150" placeToTransition="true" place="//@reseauElements.24" transition="//@reseauElements.1" nbTransfered="150"/>
+  <reseauElements xsi:type="petriNet:Arc" name="Give back 150" place="//@reseauElements.24" transition="//@reseauElements.6" nbTransfered="150"/>
+  <reseauElements xsi:type="petriNet:Place" name="Argent" nbJetons="200" arcs="//@reseauElements.22 //@reseauElements.23"/>
+  <reseauElements xsi:type="petriNet:Arc" name="finishToStart" isReadArc="true" placeToTransition="true" place="//@reseauElements.5" transition="//@reseauElements.12" nbTransfered="1"/>
+</petriNet:Reseau>
