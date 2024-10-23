@@ -1,0 +1,43 @@
+grammar miniProjet.PDLXText with org.eclipse.xtext.common.Terminals
+
+generate pDLXText "http://www.PDLXText.miniProjet"
+
+Process :
+	'process' name=ID '{'
+	    processElements+=ProcessElement*
+	'}' ;
+
+ProcessElement :
+	WorkDefinition | WorkSequence | Guidance | Ressource | Need;
+
+WorkDefinition :
+	'wd' name=ID;
+
+WorkSequence :
+	'ws' linkType=WorkSequenceType
+		'from' predecessor=[WorkDefinition]
+		'to' successor=[WorkDefinition] ;
+
+Guidance :
+	'note' texte=STRING '{'
+	    elements +=[ProcessElement]*
+	'}' ;
+
+
+Ressource : 
+	'res' name=ID 
+	'quantity' quantity = INT	
+;
+
+Need : 
+	workdefinition = [WorkDefinition]
+	'need' quantityNeeded=INT 
+	'from' ressource = [Ressource]
+;
+
+enum WorkSequenceType :
+	start2start='s2s'
+	| finish2start='f2s'
+	| start2finish='s2f'
+	| finish2finish='f2f'
+;

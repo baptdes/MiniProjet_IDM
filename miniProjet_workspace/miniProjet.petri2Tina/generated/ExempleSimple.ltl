@@ -1,8 +1,2 @@
-[] <> AchatRaquette_finished;
-[] ( AchatRaquette_finished => -(AchatRaquette_ready \/ AchatRaquette_running));
-[] <> ((AchatRaquette_ready  /\ -(AchatRaquette_finished \/ AchatRaquette_running)) \/ ( AchatRaquette_finished /\ -(AchatRaquette_ready \/ AchatRaquette_running)) \/ (AchatRaquette_running /\ -(AchatRaquette_ready \/ AchatRaquette_finished)));
-
-[] <> JouerTennis_finished;
-[] ( JouerTennis_finished => -(JouerTennis_ready \/ JouerTennis_running));
-[] <> ((JouerTennis_ready  /\ -(JouerTennis_finished \/ JouerTennis_running)) \/ ( JouerTennis_finished /\ -(JouerTennis_ready \/ JouerTennis_running)) \/ (JouerTennis_running /\ -(JouerTennis_ready \/ JouerTennis_finished)));
-
+[] (AchatRaquette_ready + AchatRaquette_running + AchatRaquette_finished) = 1;
+[] (JouerTennis_ready + JouerTennis_running + JouerTennis_finished) = 1;

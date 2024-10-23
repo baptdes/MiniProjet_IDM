@@ -1,0 +1,24 @@
+[comment encoding = UTF-8 /]
+[module SimplePDLInvariants('http://simplepdl')]
+
+
+[template public LTLInvariants(aProcess : Process)]
+[comment @main/]
+[file (aProcess.name + '_invariants.ltl', false, 'UTF-8')]
+[let wds : OrderedSet(WorkDefinition) = aProcess.getWDs()]
+[for (wd : WorkDefinition | wds)]
+['[] '/]( 
+            ([wd.name/]_ready /\ -([wd.name/]_finished \/ [wd.name/]_running)) \/ 
+            ([wd.name/]_finished /\ -([wd.name/]_ready \/ [wd.name/]_running)) \/ 
+            ([wd.name/]_running /\ -([wd.name/]_ready \/ [wd.name/]_finished))
+        );
+[/for]
+[/let]
+[/file]
+[/template]
+
+[query public getWDs(p: Process) : OrderedSet(WorkDefinition) = 
+	p.processElements->select( e | e.oclIsTypeOf(WorkDefinition) )
+		->collect( e | e.oclAsType(WorkDefinition) )
+		->asOrderedSet()
+/]

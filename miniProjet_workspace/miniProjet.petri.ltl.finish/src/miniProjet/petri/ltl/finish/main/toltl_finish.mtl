@@ -1,0 +1,24 @@
+[comment encoding = UTF-8 /]
+[module toltl_finish('http://www.example.org/petriNet')]
+
+
+[template public reseauToltl_finish(aReseau : Reseau)]
+[comment @main/]
+[file (aReseau.name + '.ltl', false, 'UTF-8')]
+[let places : OrderedSet(Place) = aReseau.getPlaces()]
+	[let finishedPlaces : OrderedSet(Place) = places->select(p | p.name.endsWith('_finished').oclAsType(Boolean))]
+op finished = [for (place : Place | finishedPlaces)] [place.name/] [if place <> finishedPlaces->last()] /\ [/if] [/for];
+	[/let]
+[/let]
+[ '[] (finished => dead)' /];
+[ '[] <> dead' /];
+[ '[] (dead => finished)' /];
+[ '[] <> finished' /];
+[/file]
+[/template]
+
+[query public getPlaces(p: Reseau) : OrderedSet(Place) = 
+	p.reseauElements->select( e | e.oclIsTypeOf(Place) )
+		->collect( e | e.oclAsType(Place) )
+		->asOrderedSet()
+/]

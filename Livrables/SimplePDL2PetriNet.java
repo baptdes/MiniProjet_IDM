@@ -181,6 +181,7 @@ public class SimplePDL2PetriNet {
 				arc.setPlace(p);
 				arc.setTransition(getT2Started(n.getWorkdefinition()));
 				arc.setName("Need " + n.getQuantityNeeded());
+				reseau.getReseauElements().add(arc);
 				
 				//Arc pour rendre les ressources quand l'activité finit
 				Arc arc_rend = myPetriFactory.createArc();
@@ -189,6 +190,8 @@ public class SimplePDL2PetriNet {
 				arc_rend.setPlace(p);
 				arc_rend.setTransition(getT2Finished(n.getWorkdefinition()));
 				arc_rend.setName("Give back " + n.getQuantityNeeded());
+				reseau.getReseauElements().add(arc_rend);
+				
 	        });
 	}
 

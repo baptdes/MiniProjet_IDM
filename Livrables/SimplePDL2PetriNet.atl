@@ -91,18 +91,18 @@ rule WorkDefinitionToPetriNet {
 rule NeedToArc {
     from ne : simplepdl!Need
     to arc : petriNet!Arc(
-    	name <- 'Need '.concat(ne.QuantityNeeded.toString()),
+    	name <- 'Need '.concat(ne.quantityNeeded.toString()),
         nbTransfered <- ne.quantityNeeded,
         place <- thisModule.resolveTemp(ne.ressource ,'pla'),
-        transition <- thisModule.resolveTemp(ne.workdefintion ,'tr1'),
+        transition <- thisModule.resolveTemp(ne.workdefinition ,'tr1'),
         placeToTransition <- true,
         reseau <- thisModule.resolveTemp(ne.process, 'reseau')),
 	
 		arcBack : petriNet!Arc(
-    	name <- 'Give back '.concat(ne.QuantityNeeded.toString()),
+    	name <- 'Give back '.concat(ne.quantityNeeded.toString()),
         nbTransfered <- ne.quantityNeeded,
         place <- thisModule.resolveTemp(ne.ressource ,'pla'),
-        transition <- thisModule.resolveTemp(ne.workdefintion ,'tr2'),
+        transition <- thisModule.resolveTemp(ne.workdefinition ,'tr2'),
         placeToTransition <- false,
         reseau <- thisModule.resolveTemp(ne.process, 'reseau') )
 }

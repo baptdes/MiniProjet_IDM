@@ -1,0 +1,5 @@
+op finished = AchatRaquette_finished /\ JouerTennis_finished;
+[] (finished => dead);
+[] <> dead;
+[] (dead => finished);
+[] <> finished;
